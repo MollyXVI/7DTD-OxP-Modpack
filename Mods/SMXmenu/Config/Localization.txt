@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+xuiChangeLogHeaderMENU,UI,Menu,x,,ChangeLog - SMXmenu - r20.rc4
+xuiChangeLogMENU,UI,Menu,x,,[AF1E19]*[-]  CHANGE: Updated references for SMXcore rename.\n[AF1E19][-]  \n[AF1E19][-]  \n[AF1E19][-]  \n[AF1E19][-]  \n[AF1E19][-]  \n,,,,,
