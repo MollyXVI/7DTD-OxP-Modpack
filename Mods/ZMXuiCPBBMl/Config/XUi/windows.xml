@@ -1,0 +1,16 @@
+<ZMXuiCPBBMl name="XUi/windows.xml">
+
+<!--	// SMX // Big Backpack Window Conversion -->
+
+		<!-- SMX COMMENT: BBM Conversions can be further manipulated by following the comments on each line. -->
+		<set xpath="/windows/window[@name='windowBackpack']/@width">606</set> <!-- SMX COMMENT: This number = cell_width x cols + 130 -->
+		<set xpath="/windows/window[@name='windowBackpack']/smxcore_window_design/@width">606</set> <!-- SMX COMMENT: This number = cell_width x cols + 130 -->
+		<set xpath="/windows/window[@name='windowBackpack']/smxui_window_design_content_inventory/@width">496</set> <!-- SMX COMMENT: This number = cell_width x cols + 20 -->
+		<set xpath="/windows/window[@name='windowBackpack']/smxui_window_design_content_inventory/@rows2">9</set>
+		<set xpath="/windows/window[@name='windowBackpack']/smxui_window_design_content_inventory/@cols">7</set>
+		<set xpath="/windows/window[@name='windowBackpack']/smxui_window_design_content_inventory/@cell_width">68</set>
+		<set xpath="/windows/window[@name='windowBackpack']/smxui_window_design_content_inventory/@cell_height">68</set>
+		<set xpath="/windows/window[@name='windowBackpack']/smxui_window_design_menu_right/@width">606</set> <!-- SMX COMMENT: This number = cell_width x cols + 130 -->
+		<set xpath="/windows/window[@name='windowBackpack']/smxui_window_design_menu_right_inventory/@width">606</set> <!-- SMX COMMENT: This number = cell_width x cols + 130 -->
+
+</ZMXuiCPBBMl>

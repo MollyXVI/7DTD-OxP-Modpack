@@ -32,6 +32,7 @@
 						visible="{showresponse}">
 					<sprite name="Icon" depth="5" pos="20,-20" size="20,20" sprite="ui_game_symbol_talk" pivot="center" color="{rowstatecolor}" globalopacitymod="1.8" />
 					<label name="Text" depth="4" pos="200,-20" width="300" height="36" style="smxcore_label_normal" text="{response}{poi.name}" font_size="22" pivot="center" color="{rowstatecolor}" overflow="ShrinkContent" />
+<!--sprite color="[green]" type="sliced" /-->
 				</rect>
 			</smxui_response_entry>
 		</append>
@@ -312,6 +313,80 @@
 		</append>
 
 
+<!--	// SMX // Dew Collector Stack -->
+
+		<append xpath="/controls">
+			<smx_dewcollector_stack controller="DewCollectorStack" on_scroll="false" allow_dropping="true" prefix_id="false" show_favorites="false">
+				<rect controller="DewCollectorStack" width="${4+cell_width}" height="${4+cell_height}" style="hover, smxcore_item_stack" pivot="center" collider_scale="1.0" on_scroll="${on_scroll}" allow_dropping="${allow_dropping}" prefix_id="${prefix_id}" show_favorites="${show_favorites}" tooltip="{tooltip}" >
+
+					<sprite name="mainBackground" depth="0" pos="0,0" width="64" height="64" sprite="menu_empty" type="sliced" pivot="center" color="[smxui_slot_main_background]" globalopacitymod="1.3" />
+
+					<sprite name="slotBackground" depth="1" pos="0,0" width="56" height="56" sprite="menu_empty" pivot="center" type="sliced" color="[smxui_slot_slot_background]" globalopacity="true" />
+					<sprite name="itemBackgroundDurability" depth="2" pos="0,3" width="59" height="41" sprite="smxlib_item_preview_background" pivot="center" rotation="45" color="{durabilitycolor}" globalopacitymod="0.8" visible="{hasdurability}" />
+					<sprite name="itemBackgroundNormal" depth="2" pos="0,3" width="59" height="41" sprite="smxlib_item_preview_background" pivot="center" rotation="45" color="[smxui_slot_item_background]" globalopacitymod="1.2" visible="{#!hasdurability}" />
+					<sprite name="slotFrame" depth="3" pos="0,0" width="67" height="67" sprite="smxlib_slot_frame_narrow" pivot="center" color="{selectionbordercolor}" globalopacitymod="1.8" />
+
+					<texture name="backgroundTexture" depth="4" pos="0,0" width="56" height="56" pivot="center" material="Materials/Transparent Colored" globalopacity="true" />
+
+					<sprite name="disabledOverlay" depth="5" pos="0,0" width="64" height="64" pivot="center" type="sliced" color="[darkGrey_half_alpha]" visible="false" />
+
+					<sprite name="itemIcon" depth="6" pos="0,0" size="60,60" atlas="{itematlas}" sprite="{itemicon}" pivot="center" color="{iconcolor}" foregroundlayer="true" visible="{showitem}" />
+					<sprite name="fillIcon" depth="6" pos="0,0" size="40,40" sprite="ui_game_symbol_water" pivot="center" color="[darkGrey]" foregroundlayer="true" visible="{showempty}" />
+
+					<sprite name="lockTypeIcon" depth="8" pos="-20,20" size="18,18" sprite="{locktypeicon}" pivot="center" foregroundlayer="true" />
+					<sprite name="itemtypeicon" depth="8" pos="-20,20" size="18,18" sprite="ui_game_symbol_{itemtypeicon}" pivot="center" color="{itemtypeicontint}" foregroundlayer="true" visible="{hasitemtypeicon}" />
+					<sprite name="favoriteIcon" depth="8" pos="20,-20" size="18,18" sprite="server_favorite" pivot="center" color="[smxui_element_accentcolor_2]" foregroundlayer="true" visible="{isfavorite}" />
+
+					<sprite name="durabilityBackground" depth="5" pos="0,-26" width="56" height="5" sprite="smxlib_item_durability_bar" pivot="center" color="[smxui_item_durability_background]" foregroundlayer="true" visible="{hasdurability}" />
+					<sprite name="durability" depth="6" pos="0,-26" width="56" height="5" sprite="smxlib_item_durability_bar" pivot="center" type="filled" fill="{durabilityfill}" color="{durabilitycolor}" foregroundlayer="true" visible="{hasdurability}" />
+
+					<label name="stackValue" depth="7" pos="-1,-23" width="60" height="18" style="smxcore_label_normal" text="{itemcount}" font_size="18" pivot="center" justify="{#hasdurability ? 'Center' : 'Right'}" color="[smxui_element_labelcolor_1]" visible="{#!hasdurability}" />
+					<!--label name="stackValue" depth="7" pos="-1,-23" width="60" height="18" style="smxcore_label_normal" text="{itemcount}" font_size="14" pivot="center" justify="{#hasdurability ? 'Right' : 'Center'}" color="[smxhud_element_labelcolor_3]" visible="{hasdurability}" /-->
+					<label name="timer" depth="7" pos="0,-2" width="62" height="24" style="smxcore_label_normal" font_size="18" upper_case="true" pivot="center" justify="center" color="[smxui_slot_timer_color]" />
+
+					<sprite name="cancel" depth="14" pos="0,0" size="60,60" sprite="ui_game_symbol_x" pivot="center" color="[smxui_slot_cancel_color]" foregroundlayer="true" visible="false" />
+					<sprite name="assembleIcon" depth="13" pos="0,0" size="40,40" sprite="{stacklockicon}" pivot="center" color="{stacklockcolor}" foregroundlayer="true" visible="{isassemblelocked}" />
+
+					<rect pos="26,0" width="64" height="58" visible="{hasfill}">
+						<sprite depth="3" pos="1,0" width="6" height="57" pivot="center" color="[darkGrey]" type="sliced" globalopacity="false" />
+						<filledsprite name="BarContent" depth="5" pos="1,1" width="6" pivot="center" color="{fillcolor}" type="filled" fill="{waterfill}" filldirection="Vertical" globalopacity="false" />
+					</rect>
+
+				</rect>
+			</smx_dewcollector_stack>
+		</append>
+
+<!--
+	<dewcollector_stack controller="DewCollectorStack" on_scroll="false" allow_dropping="true" prefix_id="false" show_favorites="false">
+		<rect controller="DewCollectorStack" style="itemStack, hover" collider_scale="1.0" on_scroll="${on_scroll}" allow_dropping="${allow_dropping}" prefix_id="${prefix_id}" show_favorites="${show_favorites}" tooltip="{tooltip}" >
+
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" />
+			<sprite depth="3" name="background" sprite="menu_empty3px" width="73" height="73" color="{selectionbordercolor}" type="sliced" globalopacity="true" fillcenter="false"/>
+			<sprite depth="2" name="highlightOverlay" width="72" height="72" color="{backgroundcolor}" pos="0,0" type="sliced" globalopacity="true"/>
+
+			<texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="73,73" globalopacity="true"/>
+			<sprite depth="8" name="favoriteIcon" width="24" height="24" sprite="server_favorite" pos="2,-2" foregroundlayer="true" visible="{isfavorite}"/>
+			<sprite depth="6" name="itemIcon" width="64" height="64" atlas="{itematlas}" sprite="{itemicon}" pos="35,-35" pivot="center" foregroundlayer="true" color="{iconcolor}" visible="{showitem}" />
+			<sprite depth="6" name="fillIcon" width="40" height="40" sprite="ui_game_symbol_water" pos="35,-35" pivot="center" foregroundlayer="true" color="[darkGrey]" visible="{showempty}" />
+			
+			<sprite depth="3" name="durabilityBackground" width="70" height="10" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="1, -60" foregroundlayer="true" visible="{hasdurability}" />
+			<filledsprite depth="4" name="durability" width="70" height="10" sprite="menu_empty2px" color="{durabilitycolor}" fill="{durabilityfill}" type="filled" pos="1, -60" foregroundlayer="true" visible="{hasdurability}" />
+
+			<sprite depth="5" name="disabledOverlay" width="72" height="72" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false"/>
+
+			<label depth="7" name="stackValue" pos="-2,-45" width="70" height="28" text="{itemcount}" font_size="26" effect="outline" justify="{#hasdurability ? 'Center' : 'Right'}" />
+			<label depth="7" name="timer" pos="35,-38" width="70" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]"/>
+			<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="70" height="70" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
+			<sprite depth="13" name="assembleIcon" size="40,40" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+			
+			<rect pos="66, 0" width="64" height="74" visible="{hasfill}">
+				<sprite width="6" height="73" depth="3" pos="1,0" color="[darkGrey]" globalopacity="false" type="sliced" />
+				<filledsprite depth="5" pos="1,1" width="6" name="BarContent" color="{fillcolor}" globalopacity="false" type="filled" fill="{waterfill}" filldirection="Vertical" />
+			</rect>
+		</rect>
+	</dewcollector_stack>
+-->
+
 <!--	// SMX // Item Stack -->
 
 		<append xpath="/controls">
@@ -512,7 +587,7 @@
 
 		<append xpath="/controls">
 			<smxui_active_buff_entry>
-				<rect controller="ActiveBuffEntry" width="68" height="74" style="press" on_hover="true" on_scroll="true" pivot="center" sound_play_on_hover="[default_hover]" sound="[recipe_click]" tooltip="{buffname}">
+				<rect controller="SMXcore.ActiveBuffEntry, SMXcore" width="68" height="74" style="press" on_hover="true" on_scroll="true" pivot="center" sound_play_on_hover="[default_hover]" sound="[recipe_click]" tooltip="{buffname}">
 
 					<!--sprite name="mainBackground" depth="0" pos="0,0" width="${cell_width-4}" height="${cell_height-4}" sprite="menu_empty" type="sliced" pivot="center" color="[smxui_slot_main_background]" globalopacitymod="1.3" />
 
@@ -583,7 +658,7 @@
 
 		<append xpath="/controls">
 			<smxui_item_action_entry>
-				<rect controller="ItemActionEntry" width="${width}" height="${height}" disabled_font_color="[darkGrey]" default_font_color="[white]" default_background_color="[lightGrey]">
+				<rect controller="SMXcore.ItemActionEntry, SMXcore" width="${width}" height="${height}" disabled_font_color="[darkGrey]" default_font_color="[white]" default_background_color="[lightGrey]">
 					<sprite name="Icon" depth="3" pos="23,-23" size="40,40" sprite="{actionicon}" pivot="center" color="{statuscolor}" foregroundlayer="true" />
 					<sprite name="background" depth="4" pos="23,-23" size="40,40" sprite="{actionicon}" color="{statuscolor}" pivot="center" foregroundlayer="true" on_hover="true" on_press="true" sound_play_on_hover="[default_hover]" sound="[paging_click]" tooltip="{actionname}" />
 					<label name="Name" depth="5" pos="99999,99999" size="40,20" style="smxcore_label_normal" text="{actionname}" font_size="14" pivot="center" justify="center" upper_case="true" color="{statuscolor}" overflow="ShrinkContent" />
@@ -634,9 +709,9 @@
 
 					<smxui_counter_control_input name="count_input" depth="2" pos="0,-60" />
 
-					<button name="countMax" depth="3" pos="23,5" size="30,30" style="press, hover, smxcore_icon_colors" sprite="ui_game_symbol_arrow_max" pivot="center" rotation="90" disabledcolor="[disabledColor]" sound_play_on_hover="[default_hover]" sound="[paging_click]" tooltip="All Available" />
-					<button name="countUp" depth="3" pos="23,-30" size="30,30" style="press, hover, held, smxcore_icon_colors" sprite="ui_game_symbol_arrow_left" pivot="center" rotation="-90" disabledcolor="[disabledColor]" sound_play_on_hover="[default_hover]" sound="[paging_click]" tooltip_key="One More" />
-					<button name="countDown" depth="3" pos="23,-130" size="30,30" style="press, hover, held, smxcore_icon_colors" sprite="ui_game_symbol_arrow_right" pivot="center" rotation="-90" disabledcolor="[disabledColor]" sound_play_on_hover="[default_hover]" sound="[paging_click]" tooltip_key="One Less" />
+					<button name="countMax" depth="3" pos="23,5" size="30,30" style="press, hover, smxcore_icon_colors" sprite="ui_game_symbol_arrow_max" pivot="center" rotation="90" disabledcolor="[disabledColor]" sound_play_on_hover="[default_hover]" sound="[paging_click]" enabled="{enablecountup}" tooltip="All Available" />
+					<button name="countUp" depth="3" pos="23,-30" size="30,30" style="press, hover, held, smxcore_icon_colors" sprite="ui_game_symbol_arrow_left" pivot="center" rotation="-90" disabledcolor="[disabledColor]" sound_play_on_hover="[default_hover]" sound="[paging_click]" enabled="{enablecountup}" tooltip_key="One More" />
+					<button name="countDown" depth="3" pos="23,-130" size="30,30" style="press, hover, held, smxcore_icon_colors" sprite="ui_game_symbol_arrow_right" pivot="center" rotation="-90" disabledcolor="[disabledColor]" sound_play_on_hover="[default_hover]" sound="[paging_click]" enabled="{enablecountdown}" tooltip_key="One Less" />
 				</rect>
 			</smxui_counter_control>
 		</append>
@@ -656,7 +731,7 @@
 						<sprite name="frameSeparator" depth="4" pos="40,15" width="30" height="2" sprite="smxlib_separation_line_1" rotation="-90" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
 					</rect>
 
-					<sprite name="slotBackground" depth="1" pos="110,0" width="295" height="66" sprite="smxlib_window_background" pivot="center" flip="horizontally" color="[smxui_element_background]" globalopacitymod="1.1" />
+					<sprite name="slotBackground" depth="1" pos="110,0" width="295" height="66" style="hover" sprite="smxlib_window_background" pivot="center" flip="horizontally" color="[smxui_element_background]" globalopacitymod="1.1" tooltip_key="You need {needcount} {itemname}, you have {havecount}" />
 					<sprite name="itemBackgroundNormal" depth="2" pos="0,3" width="59" height="41" sprite="smxlib_item_preview_background" pivot="center" rotation="45" color="[smxui_slot_item_background]" globalopacitymod="1.2" />
 
 					<sprite name="itemIcon" depth="6" pos="0,0" size="60,60" atlas="ItemIconAtlas" sprite="{itemicon}" pivot="center" color="{itemicontint}" foregroundlayer="true" />
@@ -955,7 +1030,7 @@
 		<append xpath="/controls">
 			<smx_map_popup_sub_line>
 				<rect depth="3" height="43" width="43">
-					<sprite name="background" depth="3" pos="35,-21" size="43,43" style="press" on_hover="true" on_scroll="false" sprite="smxui_button_background" pivot="center" color="[smxui_element_backdrop_1]" disabled_font_color="148,148,148,255" controller="MapSubPopupEntry" sound="[craft_click]" sound_play_on_hover="[default_hover]"/>
+					<sprite name="background" depth="3" pos="35,-21" size="43,43" style="press" on_hover="true" on_scroll="false" sprite="smxui_button_background" pivot="center" color="[smxui_element_backdrop_1]" disabled_font_color="148,148,148,255" controller="SMXcore.MapSubPopupEntry, SMXcore" sound="[craft_click]" sound_play_on_hover="[default_hover]"/>
 					<sprite name="Icon" depth="4" pos="35,-21" size="30,30" sprite="ui_game_symbol_map_waypoint_set" pivot="center" color="[smxui_element_iconcolor_1]" globalopacitymod="1.6" />
 				</rect>
 			</smx_map_popup_sub_line>
@@ -966,7 +1041,7 @@
 
 		<append xpath="/controls">
 			<smxui_waypoint_entry>
-				<rect name="smxui_waypoint_icon" width="${width}" height="${height}" controller="Quartz.MapWaypointListEntry, Quartz">
+				<rect name="smxui_waypoint_icon" width="${width}" height="${height}" controller="SMXcore.MapWaypointListEntry, SMXcore">
 
 					<sprite name="frameLeft" depth="4" pos="27,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{#!isempty}" />
 					<sprite name="frameTop" depth="5" pos="19,0" width="66" height="3" sprite="smxlib_separation_line_1" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{#!isempty}" />
@@ -995,7 +1070,7 @@
 
 		<append xpath="/controls">
 			<smx_invites_entry>
-				<rect name="smxui_waypoint_icon" width="${width}" height="${height}" controller="Quartz.MapInvitesListEntry, Quartz">
+				<rect name="smxui_waypoint_icon" width="${width}" height="${height}" controller="SMXcore.MapInvitesListEntry, SMXcore">
 
 					<sprite name="frameLeft" depth="4" pos="27,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{#!isempty}" />
 					<sprite name="frameTop" depth="5" pos="19,0" width="66" height="3" sprite="smxlib_separation_line_1" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{#!isempty}" />
@@ -1015,6 +1090,279 @@
 					<label name="NoEntry" depth="5" pos="145,-36" width="260" height="32" style="smxcore_label_normal" text="NO WAYPOINT HAVE BEEN SHARED" font_size="18" pivot="center" justify="center" upper_case="true" color="[smxui_element_labelcolor_2]" overflow="ShrinkContent" visible="{isempty}" />
 				</rect>
 			</smx_invites_entry>
+		</append>
+
+
+<!--	// SMX // Category Window - Attribute Entries - "Categories" -->
+
+		<append xpath="/controls">
+			<smxui_category_attribute>
+				<rect name="smxui_category_icon" width="${width}" height="${height}" controller="SMXcore.SkillCategoryEntry, SMXcore">
+
+					<sprite name="frameLeft" depth="4" pos="27,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+					<sprite name="frameTop" depth="5" pos="19,0" width="66" height="3" sprite="smxlib_separation_line_1" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+					<sprite name="frameRight" depth="4" pos="77,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" flip="vertically" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+					<sprite name="frameBottom" depth="5" pos="19,-50" width="66" height="3" sprite="smxlib_separation_line_1" flip="horizontally" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+
+					<sprite name="smxui_attribute_icon_background" depth="2" pos="50,-30" size="110,70" sprite="smxlib_window_splash" pivot="center" rotation="35" color="[smxui_skillwindow_undefined_1]" globalopacitymod="1.8" />
+					<sprite name="smxui_attribute_icon" depth="4" pos="50,-26" size="50,50" sprite="{categoryicon}" pivot="center" color="[smxui_element_iconcolor_1]" globalopacitymod="1.8" />
+
+					<label name="smxui_attribute_type" depth="5" pos="143,-16" width="100" height="20" style="smxcore_label_normal" text_key="attAttributeTitle" font_size="12" pivot="center" justify="left" rotation="0" upper_case="true" color="[smxui_element_accentcolor_2]" overflow="ShrinkContent" />
+					<label name="smxui_attribute_name" depth="5" pos="168,-36" width="120" height="32" style="smxcore_label_normal" text_key="{categorydisplayname}" font_size="24" pivot="center" justify="left" upper_case="true" color="[smxui_element_labelcolor_2]" overflow="ShrinkContent" />
+
+					<button name="button" depth="1" pos="140,-36" width="275" height="75" sprite="smxlib_window_button_background" pivot="center" defaultcolor="[smxui_element_background]" selectedcolor="[smxui_skillwindow_undefined_2]" hovercolor="[mediumGrey]" categoryname="" spritename="" displayname="" displayname_key="" tooltip="{categorydisplayname|once}" hoverscale="1.0" collider_scale="1.0" sound="[paging_click]" sound_play_on_hover="[default_hover]" />
+				</rect>
+			</smxui_category_attribute>
+		</append>
+
+
+<!--	// SMX // Skill Window - Entries Setup - DO NO TOUCH ME!! -->
+
+		<append xpath="/controls">
+			<smxui_skill_entry>
+				<rect name="smxui_skill_entry" pos="${pos}" width="${width}" height="${height}" controller="SMXcore.SkillEntry, SMXcore" visible="{hasentries}">
+					<smxui_attribute_entry name="smxui_attribute_entry" pos="0,0" width="280" height="73"/>
+					<smxui_perk_entry name="smxui_perk_entry_1" pos="30,0" width="280" height="73"/>
+					<smxui_perk_entry name="smxui_perk_entry_2" pos="350,0" width="280" height="73"/>
+					<smxui_book_entry name="smxui_book_entry_1" pos="30,0" width="280" height="73"/>
+					<smxui_book_entry name="smxui_book_entry_2" pos="350,0" width="280" height="73"/>
+				</rect>
+			</smxui_skill_entry>
+		</append>
+
+
+<!--	// SMX // Skill Window - Attribute Entries -->
+
+		<append xpath="/controls">
+			<smxui_attribute_entry>
+				<rect name="${name}" pos="${pos}" width="${width}" height="${height}" controller="SMXcore.SkillSubEntry, SMXcore" style="press, hover" enabled_color="[iconColor]" disabled_color="[disabledLabelColor]" row_color="[smxui_element_background]" hover_color="[mediumGrey]" sound="[paging_click]" sound_play_on_hover="[default_hover]" tooltip="{groupname}" visible="{hasskill}">
+
+					<sprite name="frameLeft" depth="4" pos="27,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+					<sprite name="frameTop" depth="5" pos="19,0" width="66" height="3" sprite="smxlib_separation_line_1" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+					<sprite name="frameRight" depth="4" pos="77,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" flip="vertically" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+					<sprite name="frameBottom" depth="5" pos="19,-50" width="66" height="3" sprite="smxlib_separation_line_1" flip="horizontally" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+
+					<sprite name="smxui_attribute_background" depth="1" pos="140,-36" width="275" height="75" sprite="smxlib_window_button_background" pivot="center" color="{rowstatecolor}" globalopacitymod="1.8" />
+
+					<sprite name="smxui_attribute_icon_splash" depth="2" pos="50,-36" size="110,70" sprite="smxlib_window_splash" pivot="center" rotation="35" color="[smxui_skillwindow_undefined_1]" globalopacitymod="1.8" />
+					<sprite name="smxui_attribute_icon_background" depth="3" pos="50,-26" size="50,50" sprite="smxlib_ui_game_symbol_sloticon_background" pivot="center" color="[smxui_element_iconcolor_1]" globalopacitymod="1.8" />
+
+					<sprite name="groupIcon" depth="4" pos="50,-26" size="50,50" sprite="{groupicon}" pivot="center" color="{statuscolor}" globalopacitymod="1.8" foregroundlayer="true" visible="{canpurchase}" />
+					<sprite name="groupIcon" depth="5" pos="50,-26" size="50,50" sprite="{groupicon}" pivot="center" color="{statuscolor}" globalopacitymod="1.8" foregroundlayer="true" visible="{cannotpurchase}" />
+
+					<label name="smxui_attribute_type" depth="5" pos="143,-16" width="100" height="20" style="smxcore_label_normal" text_key="attAttributeTitle" font_size="12" pivot="center" justify="left" rotation="0" upper_case="true" color="[smxui_element_accentcolor_2]" overflow="ShrinkContent" />
+					<label name="groupName" depth="5" pos="168,-36" width="120" height="32" style="smxcore_label_normal" text="{groupname}" font_size="24" pivot="center" justify="left" upper_case="true" color="[smxui_element_labelcolor_2]" overflow="ShrinkContent" />
+
+
+					<label name="smxui_attributestep_cost" depth="5" pos="168,-56" width="120" height="16" style="smxcore_label_normal" text="{grouppointcost}" font_size="14" pivot="center" justify="left" color="{statuscolor}" visible="{canpurchase}" />
+					<label name="smxui_attributestep_counter" depth="5" pos="168,-56" width="120" height="16" style="smxcore_label_normal" text="{grouplevel}" font_size="14" pivot="center" justify="right" color="{statuscolor}" visible="{isnotlocked}" />
+
+					<sprite name="smxui_attribute_lock" depth="20" pos="228,-16" size="22,22" sprite="ui_game_symbol_lock" pivot="center" color="[red]" foregroundlayer="true" visible="{islocked}" />
+					<sprite name="smxui_attribute_check" depth="20" pos="228,-16" size="22,22" sprite="ui_game_symbol_check" pivot="center" color="[green]" foregroundlayer="true" visible="{cannotpurchase}" />
+
+				</rect>
+			</smxui_attribute_entry>
+		</append>
+
+
+<!--	// SMX // Skill Window - Perk Entries -->
+
+		<append xpath="/controls">
+			<smxui_perk_entry>
+				<rect name="${name}" pos="${pos}" width="${width}" height="${height}" controller="SMXcore.SkillSubEntry, SMXcore" style="press, hover" enabled_color="[iconColor]" disabled_color="[disabledLabelColor]" row_color="[smxui_element_background]" hover_color="[mediumGrey]" sound="[paging_click]" sound_play_on_hover="[default_hover]" tooltip="{groupname}" visible="{hasskill}">
+
+					<sprite name="frameLeft" depth="4" pos="27,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+					<sprite name="frameTop" depth="5" pos="19,0" width="66" height="3" sprite="smxlib_separation_line_1" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+					<sprite name="frameRight" depth="4" pos="77,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" flip="vertically" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+					<sprite name="frameBottom" depth="5" pos="19,-50" width="66" height="3" sprite="smxlib_separation_line_1" flip="horizontally" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+
+					<sprite name="smxui_perk_background" depth="1" pos="140,-36" width="275" height="75" sprite="smxlib_window_button_background" pivot="center" color="{rowstatecolor}" globalopacitymod="1.8" />
+
+					<sprite name="smxui_perk_icon_splash" depth="2" pos="50,-36" size="110,70" sprite="smxlib_window_splash" pivot="center" rotation="35" color="[smxui_skillwindow_undefined_1]" globalopacitymod="1.8" />
+					<sprite name="smxui_perk_icon_background" depth="3" pos="50,-26" size="50,50" sprite="smxlib_ui_game_symbol_sloticon_background" pivot="center" color="[smxui_element_iconcolor_1]" globalopacitymod="1.8" />
+
+					<sprite name="groupIcon" depth="4" pos="50,-26" size="50,50" sprite="{groupicon}" pivot="center" globalopacitymod="1.8" foregroundlayer="true" visible="{canpurchase}" />
+					<sprite name="groupIcon" depth="5" pos="50,-26" size="50,50" sprite="{groupicon}" pivot="center" globalopacitymod="1.8" foregroundlayer="true" visible="{cannotpurchase}" />
+
+					<label name="smxui_perk_type" depth="5" pos="143,-16" width="100" height="20" style="smxcore_label_normal" text_key="xuiPerk" font_size="12" pivot="center" justify="left" rotation="0" upper_case="true" color="[smxui_element_accentcolor_2]" overflow="ShrinkContent" />
+					<label name="groupName" depth="5" pos="193,-36" width="175" height="32" style="smxcore_label_normal" text="{groupname}" font_size="20" pivot="center" justify="left" upper_case="true" color="[smxui_element_labelcolor_2]" overflow="ShrinkContent" />
+
+					<label name="smxui_perkstep_cost" depth="5" pos="168,-56" width="120" height="16" style="smxcore_label_normal" text="{grouppointcost}" font_size="14" pivot="center" justify="left" color="{statuscolor}" visible="{canpurchase}" />
+					<label name="smxui_perkstep_counter" depth="5" pos="168,-56" width="120" height="16" style="smxcore_label_normal" text="{grouplevel}" font_size="14" pivot="center" justify="right" color="{statuscolor}" visible="{isnotlocked}" />
+
+					<sprite name="smxui_perk_lock" depth="20" pos="228,-16" size="22,22" sprite="ui_game_symbol_lock" pivot="center" color="[red]" foregroundlayer="true" visible="{islocked}" />
+					<sprite name="smxui_perk_check" depth="20" pos="228,-16" size="22,22" sprite="ui_game_symbol_check" pivot="center" color="[green]" foregroundlayer="true" visible="{cannotpurchase}" />
+
+					<!--sprite depth="20" pos="148,-19" sprite="ui_game_symbol_lock" visible="{islocked}" style="icon32px" pivot="center" color="{statuscolor}" foregroundlayer="true" /-->
+
+				</rect>
+			</smxui_perk_entry>
+		</append>
+
+
+<!--	// SMX // Skill Window - Book Entries -->
+
+		<append xpath="/controls">
+			<smxui_book_entry>
+				<rect name="${name}" pos="${pos}" width="${width}" height="${height}" controller="SMXcore.SkillSubEntry, SMXcore" style="press, hover" enabled_color="[iconColor]" disabled_color="[disabledLabelColor]" row_color="[smxui_element_background]" hover_color="[mediumGrey]" sound="[paging_click]" sound_play_on_hover="[default_hover]" tooltip="{groupname}" visible="{hasskill}">
+
+					<sprite name="frameLeft" depth="6" pos="27,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+					<sprite name="frameTop" depth="7" pos="19,0" width="66" height="3" sprite="smxlib_separation_line_1" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+					<sprite name="frameRight" depth="6" pos="77,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" flip="vertically" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+					<sprite name="frameBottom" depth="7" pos="19,-50" width="66" height="3" sprite="smxlib_separation_line_1" flip="horizontally" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+
+					<sprite name="smxui_book_background" depth="1" pos="140,-36" width="275" height="75" sprite="smxlib_window_button_background" pivot="center" color="{rowstatecolor}" />
+
+					<sprite name="smxui_book_icon_splash" depth="2" pos="50,-36" size="110,70" sprite="smxlib_window_splash" pivot="center" rotation="35" color="[smxui_skillwindow_undefined_1]" globalopacitymod="1.8" />
+					<sprite name="smxui_book_icon_background" depth="3" pos="50,-26" size="50,50" sprite="smxlib_ui_game_symbol_sloticon_background" pivot="center" color="[smxui_element_iconcolor_1]" globalopacitymod="1.8" />
+
+					<sprite name="groupIcon" depth="4" pos="50,-26" size="50,50" atlas="itemiconatlas" sprite="{groupicon}" pivot="center" color="{statuscolor}" globalopacitymod="1.8" foregroundlayer="true" visible="{canpurchase}" />
+					<sprite name="groupIcon" depth="5" pos="50,-26" size="50,50" atlas="itemiconatlas" sprite="{groupicon}" pivot="center" color="{statuscolor}" globalopacitymod="1.8" foregroundlayer="true" visible="{cannotpurchase}" />
+
+					<label name="smxui_book_type" depth="5" pos="143,-16" width="100" height="20" style="smxcore_label_normal" text_key="attbooks" font_size="12" pivot="center" justify="left" rotation="0" upper_case="true" color="[smxui_element_accentcolor_2]" overflow="ShrinkContent" />
+					<label name="groupName" depth="5" pos="193,-36" width="175" height="22" style="smxcore_label_normal" text="{groupname}" font_size="20" pivot="center" justify="left" upper_case="true" color="[smxui_element_labelcolor_2]" overflow="ShrinkContent" />
+
+					<label name="smxui_bookcounter_progress" depth="5" pos="268,-56" width="120" height="16" style="smxcore_label_normal" text="{grouppointcost}" font_size="14" pivot="center" justify="left" color="{statuscolor}" visible="{canpurchase}" />
+					<!--label name="smxui_bookstep_counter" depth="5" pos="168,-56" width="120" height="16" style="smxcore_label_normal" text="{grouplevel}" font_size="14" pivot="center" justify="right" color="{statuscolor}" visible="{isnotlocked}" /-->
+
+					<sprite name="smxui_book_lock" depth="20" pos="228,-16" size="22,22" sprite="ui_game_symbol_lock" pivot="center" color="[red]" foregroundlayer="true" visible="{islocked}" />
+					<sprite name="smxui_book_check" depth="20" pos="228,-16" size="22,22" sprite="ui_game_symbol_check" pivot="center" color="[green]" foregroundlayer="true" visible="{cannotpurchase}" />
+
+					<!--label width="125" pos="48,-20" depth="2" text="{grouplevel}" visible="{isnotlocked}" pivot="center" justify="center" color="{statuscolor}"/-->
+					<!--label width="90" pos="59,-20" depth="2" text="{grouppointcost}" visible="{canpurchase}" pivot="center" justify="center" color="{statuscolor}"/-->
+
+				</rect>
+			</smxui_book_entry>
+		</append>
+
+
+<!--	// SMX // Skill Window - Attribute Buy Entries -->
+
+		<append xpath="/controls">
+			<smxui_skill_attribute_level>
+				<rect controller="SMXcore.SkillAttributeLevel, SMXcore" width="${width}" height="${height}" style="hover, scroll" color_bg_bought="255,255,255,255" color_bg_available="[lightGrey]" color_bg_locked="[darkGrey]" color_lbl_available="[white]" color_lbl_locked="[lightGrey]" color_lbl_nerfed="204,17,17" color_lbl_buffed="17,204,17" visible="{hasentry}" tooltip="{text}" sound_play_on_hover="[default_hover]" >
+
+					<rect pos="20,-10" visible="{hasentry}">
+						<sprite name="frameLeft" depth="4" pos="18,-16" width="90" height="3" sprite="smxlib_separation_line_1" rotation="-90" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+						<sprite name="frameTop" depth="5" pos="48,10" width="290" height="3" sprite="smxlib_separation_line_1" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+						<sprite name="frameRight" depth="4" pos="325,15" width="120" height="3" sprite="smxlib_separation_line_1" rotation="-90" flip="vertically" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+						<sprite name="frameBottom" depth="5" pos="8,-95" width="320" height="3" sprite="smxlib_separation_line_1" flip="horizontally" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+
+						<sprite name="backdropInfoPanel" depth="0" pos="10,10" width="320" height="110" sprite="smxlib_window_background" flip="vertically" color="[smxui_element_background]" globalopacitymod="1.1" />
+					</rect>
+
+					<rect pos="0,-10">
+						<label name="smxui_long_description" depth="3" pos="120,5" width="220" height="96" style="smxcore_label_normal" text="{longdescription}" pivot="topleft" justify="left" font_size="18" color="[smxui_element_labelcolor_1]" visible="{hasentry}" />
+					</rect>
+
+					<rect pos="20,-10">
+						<sprite name="frameLeft" depth="4" pos="27,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{hasentry}" />
+						<sprite name="frameTop" depth="5" pos="19,0" width="66" height="3" sprite="smxlib_separation_line_1" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{hasentry}" />
+						<sprite name="frameRight" depth="4" pos="77,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" flip="vertically" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{hasentry}" />
+						<sprite name="frameBottom" depth="5" pos="19,-50" width="66" height="3" sprite="smxlib_separation_line_1" flip="horizontally" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{hasentry}" />
+
+						<sprite name="smxui_attribute_icon_splash" depth="2" pos="50,-36" size="110,70" sprite="smxlib_window_splash" pivot="center" rotation="35" color="[smxui_skillwindow_undefined_1]" globalopacitymod="1.8" visible="{hasentry}" />
+						<sprite name="smxui_attribute_icon_background" depth="4" pos="50,-26" size="50,50" sprite="smxlib_ui_game_symbol_sloticon_background" pivot="center" color="[smxui_element_iconcolor_1]" globalopacitymod="1.8" visible="{hasentry}" />
+						<!--sprite name="smxui_attribute_icon" depth="5" pos="50,-26" size="50,50" sprite="{groupicon}" pivot="center" color="[smxui_element_iconcolor_1]" globalopacitymod="${globalopacitymod}" visible="{hasentry}" /-->
+						<sprite name="smxui_attribute_icon" depth="5" pos="50,-26" size="50,50" sprite="{groupicon}" pivot="center" color="[smxui_element_iconcolor_1]" globalopacitymod="1.4" visible="{hasentry}" />
+					</rect>
+
+					<label name="smxui_attribute_number" depth="3" pos="15,-39" width="70" height="60" style="smxcore_label_normal" text="{level}" pivot="center" justify="center" font_size="45" color="{color_bg}" visible="{hasentry}" />
+					<!--label depth="3" pos="5,-${Round(height/2,0)}" text="{level}" pivot="left" justify="center" width="65" font_size="30" color="{color_fg}" visible="{hasentry}" /-->
+					<!--label depth="3" pos="77,-${Round(height/2,0)}" text="{text}" pivot="left" justify="left" width="493" font_size="24" color="{color_fg}" visible="{hasentry}" /-->
+
+					<sprite name="germanIs2Long" depth="99" pos="25,9" width="20" height="20" sprite="ui_game_symbol_stealth" color="[red]" on_hover="true" tooltip="{longdescription}" />
+
+					<button depth="9" name="btnBuy" pos="71,-85" size="25,25" style="press, hover, smxcore_icon_colors" sprite="{buyicon}" pivot="center" tooltip="{buytooltip}" sound="[paging_click]" defaultcolor="{buycolor}" manualcolors="true" visible="{buyvisible}" />
+				</rect>
+			</smxui_skill_attribute_level>
+		</append>
+
+
+<!--	// SMX // Skill Window - Perk Buy Entries -->
+
+		<append xpath="/controls">
+			<smxui_skill_perk_level>
+				<rect controller="SMXcore.SkillPerkLevel, SMXcore" width="${width}" height="${height}" style="hover, scroll" color_bg_bought="255,255,255,255" color_bg_available="[lightGrey]" color_bg_locked="[darkGrey]" color_lbl_available="[white]" color_lbl_locked="[lightGrey]" color_lbl_nerfed="204,17,17" color_lbl_buffed="17,204,17" visible="{hasentry}" tooltip="{text}" sound_play_on_hover="[default_hover]" >
+
+					<rect pos="20,-10" visible="{hasentry}">
+						<sprite name="frameLeft" depth="4" pos="18,-16" width="90" height="3" sprite="smxlib_separation_line_1" rotation="-90" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+						<sprite name="frameTop" depth="5" pos="48,10" width="290" height="3" sprite="smxlib_separation_line_1" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+						<sprite name="frameRight" depth="4" pos="325,15" width="120" height="3" sprite="smxlib_separation_line_1" rotation="-90" flip="vertically" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+						<sprite name="frameBottom" depth="5" pos="8,-95" width="320" height="3" sprite="smxlib_separation_line_1" flip="horizontally" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+
+						<sprite name="backdropInfoPanel" depth="0" pos="10,10" width="320" height="110" sprite="smxlib_window_background" flip="vertically" color="[smxui_element_background]" globalopacitymod="1.1" />
+					</rect>
+
+					<rect pos="0,-10">
+						<label name="smxui_long_description" depth="3" pos="120,5" width="220" height="96" style="smxcore_label_normal" text="{longdescription}" pivot="topleft" justify="left" font_size="18" color="[smxui_element_labelcolor_1]" visible="{hasentry}" />
+					</rect>
+
+					<rect pos="20,-10">
+						<sprite name="frameLeft" depth="4" pos="27,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{hasentry}" />
+						<sprite name="frameTop" depth="5" pos="19,0" width="66" height="3" sprite="smxlib_separation_line_1" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{hasentry}" />
+						<sprite name="frameRight" depth="4" pos="77,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" flip="vertically" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{hasentry}" />
+						<sprite name="frameBottom" depth="5" pos="19,-50" width="66" height="3" sprite="smxlib_separation_line_1" flip="horizontally" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{hasentry}" />
+
+						<sprite name="smxui_perk_icon_splash" depth="2" pos="50,-36" size="110,70" sprite="smxlib_window_splash" pivot="center" rotation="35" color="[smxui_skillwindow_undefined_1]" globalopacitymod="1.8" visible="{hasentry}" />
+						<sprite name="smxui_perk_icon_background" depth="4" pos="50,-26" size="50,50" sprite="smxlib_ui_game_symbol_sloticon_background" pivot="center" color="[smxui_element_iconcolor_1]" globalopacitymod="1.8" visible="{hasentry}" />
+						<!--sprite name="smxui_perk_icon" depth="5" pos="50,-26" size="50,50" sprite="{groupicon}" pivot="center" color="[smxui_element_iconcolor_1]" globalopacitymod="${globalopacitymod}" visible="{hasentry}" /-->
+						<sprite name="smxui_perk_icon" depth="5" pos="50,-26" size="50,50" sprite="{groupicon}" pivot="center" color="[smxui_element_iconcolor_1]" globalopacitymod="1.4" visible="{hasentry}" />
+					</rect>
+
+					<label name="smxui_attribute_number" depth="3" pos="15,-39" width="70" height="60" style="smxcore_label_normal" text="{level}" pivot="center" justify="center" font_size="45" color="{color_bg}" visible="{hasentry}" />
+					<!--label depth="3" pos="5,-${Round(height/2,0)}" text="{level}" pivot="left" justify="center" width="65" font_size="30" color="{color_fg}" visible="{hasentry}" /-->
+					<!--label depth="3" pos="77,-${Round(height/2,0)}" text="{text}" pivot="left" justify="left" width="493" font_size="24" color="{color_fg}" visible="{hasentry}" /-->
+
+					<sprite name="germanIs2Long" depth="99" pos="25,9" width="20" height="20" sprite="ui_game_symbol_stealth" color="[red]" on_hover="true" tooltip="{longdescription}" />
+
+					<button depth="9" name="btnBuy" pos="71,-85" size="25,25" style="press, hover, smxcore_icon_colors" sprite="{buyicon}" pivot="center" tooltip="{buytooltip}" sound="[paging_click]" defaultcolor="{buycolor}" manualcolors="true" visible="{buyvisible}" />
+				</rect>
+			</smxui_skill_perk_level>
+		</append>
+
+
+<!--	// SMX // Skill Window - Book Read Entries -->
+
+		<append xpath="/controls">
+			<smxui_skill_book_level>
+				<rect controller="SMXcore.SkillBookLevel, SMXcore" width="${width}" height="${height}" style="hover, scroll" color_bg_bought="255,255,255,255" color_bg_available="[lightGrey]" color_bg_locked="[darkGrey]" color_lbl_available="[white]" color_lbl_locked="[lightGrey]" color_lbl_nerfed="204,17,17" color_lbl_buffed="17,204,17" visible="{hasentry}" tooltip="{text}" sound_play_on_hover="[default_hover]" >
+
+					<rect pos="20,-10">
+						<sprite name="frameLeft" depth="4" pos="18,-16" width="90" height="3" sprite="smxlib_separation_line_1" rotation="-90" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+						<sprite name="frameTop" depth="5" pos="48,10" width="290" height="3" sprite="smxlib_separation_line_1" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+						<sprite name="frameRight" depth="4" pos="325,15" width="120" height="3" sprite="smxlib_separation_line_1" rotation="-90" flip="vertically" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+						<sprite name="frameBottom" depth="5" pos="8,-95" width="320" height="3" sprite="smxlib_separation_line_1" flip="horizontally" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+
+						<sprite name="backdropInfoPanel" depth="0" pos="10,10" width="320" height="110" sprite="smxlib_window_background" flip="vertically" color="[smxui_element_background]" globalopacitymod="1.1" />
+					</rect>
+
+					<rect pos="0,-10">
+						<label name="smxui_long_description" depth="3" pos="120,5" width="220" height="96" style="smxcore_label_normal" text="{longdescription}" pivot="topleft" justify="left" font_size="18" color="[smxui_element_labelcolor_1]" visible="{hasentry}" />
+					</rect>
+
+					<rect pos="20,-10">
+						<sprite name="frameLeft" depth="4" pos="27,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{hasentry}" />
+						<sprite name="frameTop" depth="5" pos="19,0" width="66" height="3" sprite="smxlib_separation_line_1" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{hasentry}" />
+						<sprite name="frameRight" depth="4" pos="77,6" width="66" height="3" sprite="smxlib_separation_line_1" rotation="-90" flip="vertically" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{hasentry}" />
+						<sprite name="frameBottom" depth="5" pos="19,-50" width="66" height="3" sprite="smxlib_separation_line_1" flip="horizontally" color="[smxui_element_separation_1]" globalopacitymod="1.8" visible="{hasentry}" />
+
+						<sprite name="smxui_attribute_icon_splash" depth="2" pos="50,-36" size="110,70" sprite="smxlib_window_splash" pivot="center" rotation="35" color="[smxui_skillwindow_undefined_1]" globalopacitymod="1.8" visible="{hasentry}" />
+						<sprite name="smxui_attribute_icon_background" depth="4" pos="50,-26" size="50,50" sprite="smxlib_ui_game_symbol_sloticon_background" pivot="center" color="[smxui_element_iconcolor_1]" globalopacitymod="1.8" visible="{hasentry}" />
+						<!--sprite name="smxui_attribute_icon" depth="5" pos="50,-26" size="50,50" atlas="itemiconatlas" sprite="{groupicon}" pivot="center" color="[smxui_element_iconcolor_1]" globalopacitymod="${globalopacitymod}" visible="{hasentry}" /-->
+						<sprite name="smxui_attribute_icon" depth="5" pos="50,-26" size="50,50" atlas="itemiconatlas" sprite="{groupicon}" pivot="center" color="[smxui_element_iconcolor_1]" globalopacitymod="1.4" visible="{hasentry}" />
+					</rect>
+
+					<label name="smxui_book_number" depth="3" pos="15,-39" width="70" height="60" style="smxcore_label_normal" text="{level}" pivot="center" justify="center" font_size="45" color="{color_bg}" visible="{hasentry}" />
+					<sprite name="smxui_book_complete" depth="3" pos="15,-39" width="35" height="35" pivot="center" sprite="ui_game_symbol_check" color="{color_bg}" visible="{iscomplete}" />
+
+					<sprite name="germanIs2Long" depth="99" pos="25,9" width="20" height="20" sprite="ui_game_symbol_stealth" color="[red]" on_hover="true" tooltip="{longdescription}" />
+
+					<!--label depth="3" pos="5,-${Round(height/2,0)}" text="{level}" pivot="left" justify="center" width="65" font_size="30" color="{color_fg}" visible="{hasentry}" /-->
+					<!--label depth="3" pos="77,-${Round(height/2,0)}" text="{text}" pivot="left" justify="left" width="493" font_size="24" color="{color_fg}" visible="{hasentry}" /-->
+
+				</rect>
+			</smxui_skill_book_level>
 		</append>
 
 </SMXui>

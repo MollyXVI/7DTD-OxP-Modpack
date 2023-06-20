@@ -90,6 +90,13 @@
 				<smxcore_window_design name="windowName" depth="1" width="450" height="800" text="{itemname}" text_key="" />
 				<smxui_window_design_menu_right depth="3" width="450" height="800" />
 
+
+<!-- SMX EXP -->
+	<label name="durabilityValue" depth="7" pos="20,-15" width="50" height="50" style="smxcore_label_normal" text="{durabilitytext}" font_size="40" justify="{durabilityjustify}" color="[smxui_element_labelcolor_1]" visible="{hasdurability}" />
+
+	<sprite name="background" depth="5" pos="20,-15" width="56" height="56" sprite="menu_empty" pivot="center" type="sliced" color="[smxui_slot_slot_background]" on_hover="true" globalopacity="true" tooltip="{tooltip}" visible="{hasdurability}" />
+	<sprite name="slotFrame" depth="6" pos="20,-15" width="67" height="67" sprite="smxlib_slot_frame_narrow" pivot="center" color="[smxui_slot_frame_normal]" globalopacitymod="1.8" visible="{hasdurability}" />
+
 				<rect name="smxui_window_content" depth="3" pos="20,-80" width="340" height="700">
 
 					<sprite name="backdropWindow" depth="1" pos="0,-5" width="340" height="690" sprite="smxlib_window_background" flip="vertically" color="[smxui_element_backdrop_1]" globalopacitymod="1.1" />
@@ -204,7 +211,7 @@
 
 						<smxui_window_design_module_title pos="0,0" text="MODIFICATIONS" />
 
-						<grid name="parts" depth="4" pos="35,-90" rows="1" cols="5" cell_width="68" cell_height="68" repeat_content="false" controller="PartList" arrangement="horizontal" visible="{isnotcomparing}">
+						<grid name="parts" depth="4" pos="35,-90" rows="1" cols="5" cell_width="68" cell_height="68" repeat_content="false" controller="SMXcore.PartList, SMXcore" arrangement="horizontal" visible="{isnotcomparing}">
 							<smxui_partlist_item_stack name="0" sprite="smxlib_ui_game_symbol_spraycan" />
 							<smxui_partlist_item_stack name="0" sprite="ui_game_symbol_assemble" />
 							<smxui_partlist_item_stack name="0" sprite="ui_game_symbol_assemble" />
@@ -234,6 +241,9 @@
 
 				<sprite name="windowIcon" depth="2" pos="99999,99999" size="0,0" style="icon32px" sprite="{itemgroupicon}" />
 				<sprite name="costIcon" depth="4" pos="99999,99999" size="0,0" sprite="ui_game_symbol_coin" color="[white]" foregroundlayer="true" />
+
+				<button name="addQualityButton" depth="12" pos="320,-195" size="30,30" style="press" pivot="center" sprite="ui_game_symbol_arrow_right" sound="[paging_click]" disabledcolor="[lightGrey]" enabled="{enableaddquality}" visible="{hasdurability}" />
+				<button name="subtractQualityButton" depth="12" pos="60,-195" size="30,30" style="press" pivot="center" sprite="ui_game_symbol_arrow_left" sound="[paging_click]" disabledcolor="[lightGrey]" enabled="{enablesubtractquality}" visible="{hasdurability}" />
 
 				<rect name="smxui_window_content" depth="3" pos="20,-80" width="340" height="700">
 

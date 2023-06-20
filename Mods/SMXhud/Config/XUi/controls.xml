@@ -102,7 +102,7 @@
 
 		<append xpath="/controls">
 			<smxhud_active_buff_entry>
-				<rect width="${width}" height="${height}" controller="ActiveBuffEntry" visible="{hasbuff}">
+				<rect width="${width}" height="${height}" controller="SMXcore.ActiveBuffEntry, SMXcore" visible="{hasbuff}">
 					<sprite name="background" depth="1" pos="0,0" width="${width}" height="${height}" style="hover" sprite="smxhud_unitframe_buff_background" pivot="center" color="[smxhud_unitframe_buff_background]" globalopacitymod="1.8" tooltip="{buffname}" />
 					<sprite name="Icon" depth="2" pos="0,10" width="${Round(width/2,0)}" height="${Round(width/2,0)}" sprite="{bufficon|once}" pivot="center" color="{buffcolor}" />
 					<label name="smxhud_buff_label" depth="3" pos="0,${Round(height-height-height/2,0)+pos}" width="40" height="20" style="smxcore_label_normal" text="{buffdisplayinfo}" font_size="${font_size}" pivot="center" justify="center" color="[smxhud_element_labelcolor_1]" overflow="ShrinkContent" />
@@ -131,13 +131,27 @@
 
 		<append xpath="/controls">
 			<smxhud_quest_objective_tracker_entry>
-				<rect name="smxhud_questtracker_entry" wisth="280" height="26" controller="QuestTrackerObjectiveEntry" visible="{hasobjective}">
+				<rect name="smxhud_questtracker_entry" width="280" height="26" controller="QuestTrackerObjectiveEntry" visible="{hasobjective}">
 					<sprite name="iconTrack" depth="2" pos="280,6" size="22,22" sprite="{objectivecompletesprite}" color="{objectivecompletecolor}" visible="{objectiveshowicon}" />
 					<sprite name="smxhud_questtracker_objective_background" depth="0" pos="-15,11" width="340" height="36" sprite="smxhud_objective_background" color="[smxhud_element_background]" globalopacitymod="1.4" />
 					<label name="smxhud_questtracker_objective" depth="1" pos="0,6" width="{objectivetextwidth}" style="smxcore_label_normal" text="{objectiveoptional}{objectivedescription} " font_size="20" justify="left" upper_case="true" color="[smxhud_element_labelcolor_1]" visible="{hasobjective}" />
 					<label name="smxhud_questtracker_state" depth="1" pos="0,6" width="{objectivetextwidth}" style="smxcore_label_normal" text=" [{objectivecompletehexcolor}]{objectivestate}[-]" font_size="20" justify="right" upper_case="true" color="[smxhud_element_labelcolor_1]" visible="{hasobjective}" />
 				</rect>
 			</smxhud_quest_objective_tracker_entry>
+		</append>
+
+
+<!--	// SMX // Recipe Tracker -->
+
+		<append xpath="/controls">
+			<smx_recipe_ingredient_tracker_entry>
+				<rect name="smx_recipetracker_entry" width="280" height="26" controller="RecipeTrackerIngredientEntry" visible="{hasingredient}">
+					<sprite name="smx_recipetracker_ingredient_background" depth="0" pos="-15,11" width="340" height="36" sprite="smxhud_objective_background" color="[smxhud_element_background]" globalopacitymod="1.4" visible="{hasingredient}" />
+					<sprite name="iconTrack" depth="2" pos="-5,6" size="22,22" atlas="ItemIconAtlas" sprite="{itemicon}" color="{objectivecompletecolor}" visible="{hasingredient}" />
+					<label name="smx_recipetracker_ingredient" depth="1" pos="25,6" width="275" style="smxcore_label_normal" text="{itemname}" font_size="20" justify="left" upper_case="true" color="[smxhud_element_labelcolor_1]" visible="{hasobjective}" />
+					<label name="smx_recipetracker_ingredient" depth="1" pos="25,6" width="275" style="smxcore_label_normal" text=" [{ingredientcompletehexcolor}]{itemcount}[-]" font_size="20" justify="right" upper_case="true" color="[smxhud_element_labelcolor_1]" visible="{hasingredient}" />
+				</rect>
+			</smx_recipe_ingredient_tracker_entry>
 		</append>
 
 
@@ -168,7 +182,7 @@
 					value="" active_text_color="[labelColor]" caret_color="[labelColor]" selection_color="[mediumGrey_half_alpha]" 
 					character_limit="0" validation="none" backgroundcolor="[black]" on_hover="false" on_scroll="false" virtual_keyboard_prompt=""
 					pivot="topleft" visible="true" on_return="submit" tooltip_key="" search_field="false" password_field="false" focus_on_open="false" clear_on_open="false" close_group_on_tab="false" open_vk_on_open="false"
-					foregroundlayer="false" justify="center" overflow="ShrinkContent" max_line_count="0" font_face="ReferenceFont" crispness="Always">
+					foregroundlayer="false" justify="center" overflow="ShrinkContent" max_line_count="0" font_face="ReferenceFont" crispness="OnDesktop">
 				<panel name="${name}" depth="${depth}" controller="TextInput" pos="${pos}" width="${width}" height="${height}" value="${value}"
 					active_text_color="${active_text_color}" caret_color="${caret_color}" selection_color="${selection_color}" 
 					character_limit="${character_limit}" validation="${validation}" backgroundcolor="${backgroundcolor}" style="press, select" on_hover="${on_hover}" on_scroll="${on_scroll}" snapCursor="true" virtual_keyboard_prompt="${virtual_keyboard_prompt}"
