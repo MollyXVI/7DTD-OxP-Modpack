@@ -9,4 +9,10 @@
 
 		<set xpath="/buffs/buff[@name='buffDrugSteroids']/effect_group/passive_effect[@name='CarryCapacity']/@value">68</set>
 
+
+<!--	// SMX // Twitch Buff Conversions -->
+
+		<set xpath="/buffs/buff[@name='twitch_buffPackMule']/effect_group/passive_effect[@name='CarryCapacity']/@value">68</set>
+		<set xpath="/buffs/buff[@name='twitch_buffEncumbered']/effect_group/passive_effect[@name='CarryCapacity']/@value">40</set>
+
 </ZMXuiCPBBMl>
