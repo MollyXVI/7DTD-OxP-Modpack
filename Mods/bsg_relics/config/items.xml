@@ -1,0 +1,4 @@
+<configs>
+	<setattribute xpath="/items/item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']/passive_effect[@name='EntityDamage']" name="tags">perkArchery,perkDemolitionsExpert</setattribute>
+	<!-- <set xpath="/items/item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']/passive_effect[@name='EntityDamage']/@tags">perkArchery,perkDemolitionsExpert</set> -->
+</configs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="BSG Relics" />
+		<Description value="Adds Relics. Each with their own Effects!" />
+		<Author value="Bladestorm Games"/>
+		<Version value="A20" />
+		<Website value="" />
+	</ModInfo>
+</xml>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<addnew>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modGunRetractingStock']">
+
+		<item_property_overrides name="IZYgunT2shotgunM870Police">
+			<property name="Meshfile" value="#@modfolder:Resources/M870police.unity3d?M870police_stock.Prefab"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3shotgunXM12G">
+			<property name="Meshfile" value="#@modfolder:Resources/XM12G.unity3d?XM12G_stock.Prefab"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3shotgunM590S">
+			<property name="Meshfile" value="#@modfolder:Resources/M590S.unity3d?M590S_stock.Prefab"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT4shotgunSaika12g">
+			<property name="Meshfile" value="#@modfolder:Resources/saika12autoSG.unity3d?saika12autoSG_stock.prefab"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT4shotgunSPAS12">
+			<property name="Meshfile" value="#@modfolder:Resources/SPAS12GFR.unity3d?SPAS12GFR_stock.Prefab"/>
+		</item_property_overrides>
+		
+	</append>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modShotgunSawedOffBarrel']">
+	</append>
+	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']">
+	</append>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+		<item_property_overrides name="IZYgunT1shotgunDoublebarrellong">
+			<property name="Meshfile" value="#@modfolder:Resources/DBshotgun1.unity3d?DBshotgun1_reflex.Prefab"/>
+			<property name="ScopeCameraOffset" value="0,.0075,-.025"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT1shotgunDoublebarrellong">
+			<property name="Meshfile" value="#@modfolder:Resources/DBshotgun1.unity3d?DBshotgun1_reflex.Prefab"/>
+			<property name="ScopeCameraOffset" value="0,.007,0"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT1shotgunBoltactionShotgun">
+			<property name="ScopeCameraOffset" value=".0005,-.0048,-.01"/>	
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT1shotgunModel1887">
+			<property name="ScopeCameraOffset" value="-.0001,.0003,-.05"/>
+			<property name="Meshfile" value="#@modfolder:Resources/m1887sg.unity3d?m1887sg_reflex.Prefab"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT2shotgunM31hunter">
+			<property name="ScopeCameraOffset" value=".001,-.0178,.025"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT2shotgunM1897">
+		<property name="ScopeCameraOffset" value=".00125,-.032,.07"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT2shotgunM870Police">
+			<property name="ScopeCameraOffset" value="0,-.0455,.015"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT2shotgunM870Police">
+			<property name="ScopeCameraOffset" value="0,-.0455,.015"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3shotgunM4terminator">
+			<property name="ScopeCameraOffset" value="0,-.0158,.29"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3shotgunXM12G">
+			<property name="ScopeCameraOffset" value="-.0003,-.023,.13"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3shotgunM590S">
+			<property name="ScopeCameraOffset" value=".0012,-.029,.10"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT4shotgunSaika12g">
+			<property name="ScopeCameraOffset" value="-.0002,-.0196,.28"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT4shotgunHEXAGun">
+			<property name="ScopeCameraOffset" value="0,-.0108,-.04"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT4shotgunSPAS12">
+			<property name="ScopeCameraOffset" value="-.0005,-.011,.3"/>
+		</item_property_overrides>
+		
+	</append>
+	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
+		<item_property_overrides name="*">
+			<property name="CrosshairOnAim" value="true"/>
+			<property name="Zoom_max_out" value="40"/>
+			<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT1shotgunBoltactionShotgun">
+			<property name="ScopeCameraOffset" value="0,-.0051,-.025"/>	
+			<property name="Zoom_max_out" value="31"/>
+			<property name="Zoom_max_in" value="31"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT2shotgunM31hunter">
+			<property name="ScopeCameraOffset" value=".00095,-.023,.02"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT2shotgunM870Police">
+			<property name="ScopeCameraOffset" value="0,-.0475,-.005"/>
+			<property name="Zoom_max_out" value="35"/>
+			<property name="Zoom_max_in" value="35"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3shotgunM4terminator">
+			<property name="ScopeCameraOffset" value="0,-.0205,.22"/>
+			<property name="Zoom_max_out" value="30"/>
+			<property name="Zoom_max_in" value="30"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3shotgunXM12G">
+			<property name="ScopeCameraOffset" value="-.0005,-.019,.05"/>
+			<property name="Zoom_max_out" value="50"/>
+			<property name="Zoom_max_in" value="50"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3shotgunM590S">
+			<property name="ScopeCameraOffset" value=".0012,-.031,.01"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT4shotgunSaika12g">
+			<property name="ScopeCameraOffset" value="-.0002,-.0232,.25"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT4shotgunHEXAGun">
+			<property name="ScopeCameraOffset" value="0,-.0108,-.1"/>
+			<property name="Zoom_max_out" value="30"/>
+			<property name="Zoom_max_in" value="30"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT4shotgunSPAS12">
+			<property name="ScopeCameraOffset" value="0,-.0164,.28"/>
+			<property name="Zoom_max_out" value="60"/>
+			<property name="Zoom_max_in" value="60"/>
+		</item_property_overrides>
+		
+	</append>
+	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
+
+		<item_property_overrides name="IZYgunT2shotgunM1897">
+			<property name="Sound_start" value="m870pol_silen_fire"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="IZYgunT2shotgunM870Police">
+			<property name="Sound_start" value="m870pol_silen_fire"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3shotgunM4terminator">
+			<property name="Sound_start" value="xm12g_silen_fire"/>
+			<property name="Sound_loop" value="xm12g_silen_fire"/>
+			<property name="Sound_end" value="xm12g_silen_end"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3shotgunXM12G">
+			<property name="Sound_start" value="xm12g_silen_fire"/>
+			<property name="Sound_loop" value="xm12g_silen_fire"/>
+			<property name="Sound_end" value="xm12g_silen_end"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3shotgunM590S">
+			<property name="Sound_start" value="m870pol_silen_fire"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT4shotgunSaika12g">
+			<property name="Sound_start" value="xm12g_silen_fire"/>
+			<property name="Sound_loop" value="xm12g_silen_fire"/>
+			<property name="Sound_end" value="xm12g_silen_end"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT4shotgunHEXAGun">
+			<property name="Sound_start" value="HEXAgun_silen_fire"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT4shotgunSPAS12">
+			<property name="Sound_start" value="xm12g_silen_fire"/>
+			<property name="Sound_loop" value="xm12g_silen_fire"/>
+			<property name="Sound_end" value="xm12g_silen_end"/>
+		</item_property_overrides>
+		
+	</append>
+	
+</addnew>

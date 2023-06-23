@@ -1,0 +1,538 @@
+<Sap>
+
+<remove xpath="/Sounds/SoundDataNode[@name='bullet_shell_eject']/AudioClip[contains(@ClipName, 'bullet_shell_eject')]"/>
+
+<append xpath="/Sounds/SoundDataNode[@name='bullet_shell_eject']">
+  <AudioClip ClipName="#@modfolder:Resources/null.unity3d?empty"/>
+</append>
+
+	<!--weapons! yay! start-->
+	
+	<!--revolver-->
+	
+<remove xpath="/Sounds/SoundDataNode[@name='44magnum_fire']/AudioClip[contains(@ClipName, '44magnum_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='44magnum_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/44.unity3d?44magnum_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/44.unity3d?44magnum_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/44.unity3d?44magnum_fire3"/>
+  <AudioClip ClipName="#@modfolder:Resources/44.unity3d?44magnum_fire4"/>
+  <AudioClip ClipName="#@modfolder:Resources/44.unity3d?44magnum_fire5"/>
+</append>
+
+    <!--revolver-->
+	
+	<!--ak47-->
+
+<remove xpath="/Sounds/SoundDataNode[@name='ak47_fire']/AudioClip[contains(@ClipName, 'ak47_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='ak47_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/ak.unity3d?ak47_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/ak.unity3d?ak47_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/ak.unity3d?ak47_fire3"/>
+  <AudioClip ClipName="#@modfolder:Resources/ak.unity3d?ak47_fire4"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='ak47_s_fire']/AudioClip[contains(@ClipName, 'ak47_s_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='ak47_s_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/ak.unity3d?ak47_s_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/ak.unity3d?ak47_s_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/ak.unity3d?ak47_s_fire3"/>
+  <AudioClip ClipName="#@modfolder:Resources/ak.unity3d?ak47_s_fire4"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='ak47_reload_part_01']/AudioClip[contains(@ClipName, 'ak47_reload_part_01')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='ak47_reload_part_01']">
+  <AudioClip ClipName="#@modfolder:Resources/ak.unity3d?ak47_reload_part_01"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='ak47_reload_part_02']/AudioClip[contains(@ClipName, 'ak47_reload_part_02')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='ak47_reload_part_02']">
+  <AudioClip ClipName="#@modfolder:Resources/ak.unity3d?ak47_reload_part_02"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='ak47_reload_part_03']/AudioClip[contains(@ClipName, 'ak47_reload_part_03')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='ak47_reload_part_03']">
+  <AudioClip ClipName="#@modfolder:Resources/ak.unity3d?ak47_reload_part_03"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='ak47_reload_part_04']/AudioClip[contains(@ClipName, 'ak47_reload_part_04')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='ak47_reload_part_04']">
+  <AudioClip ClipName="#@modfolder:Resources/ak.unity3d?ak47_reload_part_04"/>
+</append>
+
+    <!--ak47-->
+	
+	<!--autoshotgun-->
+
+<remove xpath="/Sounds/SoundDataNode[@name='autoshotgun_fire']/AudioClip[contains(@ClipName, 'autoshotgun_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='autoshotgun_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/autoshotgun.unity3d?autoshotgun_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/autoshotgun.unity3d?autoshotgun_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/autoshotgun.unity3d?autoshotgun_fire3"/>
+</append>
+
+    <!--autoshotgun-->
+	
+	<!--deagle-->
+
+<remove xpath="/Sounds/SoundDataNode[@name='desertvulture_fire']/AudioClip[contains(@ClipName, 'desertvulture_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='desertvulture_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/deagle.unity3d?desertvulture_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/deagle.unity3d?desertvulture_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/deagle.unity3d?desertvulture_fire3"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='desertvulture_reload_part_01']/AudioClip[contains(@ClipName, 'desertvulture_reload_part_01')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='desertvulture_reload_part_01']">
+  <AudioClip ClipName="#@modfolder:Resources/deagle.unity3d?desertvulture_reload_part_01"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='desertvulture_reload_part_02']/AudioClip[contains(@ClipName, 'desertvulture_reload_part_02')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='desertvulture_reload_part_02']">
+  <AudioClip ClipName="#@modfolder:Resources/deagle.unity3d?desertvulture_reload_part_02"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='desertvulture_reload_part_03']/AudioClip[contains(@ClipName, 'desertvulture_reload_part_03')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='desertvulture_reload_part_03']">
+  <AudioClip ClipName="#@modfolder:Resources/deagle.unity3d?desertvulture_reload_part_03"/>
+</append>
+
+    <!--deagle-->
+	
+	<!--hunting rifle-->
+
+<remove xpath="/Sounds/SoundDataNode[@name='hunting_rifle_s_fire']/AudioClip[contains(@ClipName, 'hunting_rifle_s_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='hunting_rifle_s_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/hunting.unity3d?hunting_rifle_s_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/hunting.unity3d?hunting_rifle_s_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/hunting.unity3d?hunting_rifle_s_fire3"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='sniperrifle_fire']/AudioClip[contains(@ClipName, 'sniperrifle_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='sniperrifle_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/hunting.unity3d?sniperrifle_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/hunting.unity3d?sniperrifle_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/hunting.unity3d?sniperrifle_fire3"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='hunting_rifle_reload_part_02']/AudioClip[contains(@ClipName, 'hunting_rifle_reload_part_02')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='hunting_rifle_reload_part_02']">
+  <AudioClip ClipName="#@modfolder:Resources/hunting.unity3d?hunting_rifle_reload_part_02"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='hunting_rifle_reload_part_03']/AudioClip[contains(@ClipName, 'hunting_rifle_reload_part_03')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='hunting_rifle_reload_part_03']">
+  <AudioClip ClipName="#@modfolder:Resources/hunting.unity3d?hunting_rifle_reload_part_03"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='hunting_rifle_reload_part_04']/AudioClip[contains(@ClipName, 'hunting_rifle_reload_part_04')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='hunting_rifle_reload_part_04']">
+  <AudioClip ClipName="#@modfolder:Resources/hunting.unity3d?hunting_rifle_reload_part_04"/>
+</append>
+
+    <!--hunting rifle-->
+	
+	<!--lever action-->
+
+<remove xpath="/Sounds/SoundDataNode[@name='lever_action_rifle_fire']/AudioClip[contains(@ClipName, 'lever_action_rifle_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='lever_action_rifle_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/lever.unity3d?lever_action_rifle_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/lever.unity3d?lever_action_rifle_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/lever.unity3d?lever_action_rifle_fire3"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='lever_action_rifle_open']/AudioClip[contains(@ClipName, 'lever_action_rifle_open')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='lever_action_rifle_open']">
+  <AudioClip ClipName="#@modfolder:Resources/lever.unity3d?lever_action_rifle_open"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='lever_action_rifle_close']/AudioClip[contains(@ClipName, 'lever_action_rifle_close')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='lever_action_rifle_close']">
+  <AudioClip ClipName="#@modfolder:Resources/lever.unity3d?lever_action_rifle_close"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='lever_action_rifle_load']/AudioClip[contains(@ClipName, 'lever_action_rifle_load')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='lever_action_rifle_load']">
+  <AudioClip ClipName="#@modfolder:Resources/lever.unity3d?lever_action_rifle_load1"/>
+  <AudioClip ClipName="#@modfolder:Resources/lever.unity3d?lever_action_rifle_load2"/>
+  <AudioClip ClipName="#@modfolder:Resources/lever.unity3d?lever_action_rifle_load3"/>
+  <AudioClip ClipName="#@modfolder:Resources/lever.unity3d?lever_action_rifle_load4"/>
+</append>
+
+    <!--lever action-->
+	
+    <!--pipe rifle-->
+
+<remove xpath="/Sounds/SoundDataNode[@name='pipe_rifle_fire']/AudioClip[contains(@ClipName, 'pipe_rifle_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='pipe_rifle_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/piperifle.unity3d?pipe_rifle_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/piperifle.unity3d?pipe_rifle_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/piperifle.unity3d?pipe_rifle_fire3"/>
+</append>
+
+    <!--pipe rifle-->
+	
+    <!--pistol-->
+
+<remove xpath="/Sounds/SoundDataNode[@name='Pistol_Fire']/AudioClip[contains(@ClipName, 'Pistol_Fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='Pistol_Fire']">
+  <AudioClip ClipName="#@modfolder:Resources/pistol.unity3d?Pistol_Fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/pistol.unity3d?Pistol_Fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/pistol.unity3d?Pistol_Fire3"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='pistol_s_fire']/AudioClip[contains(@ClipName, 'pistol_s_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='pistol_s_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/pistol.unity3d?pistol_s_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/pistol.unity3d?pistol_s_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/pistol.unity3d?pistol_s_fire3"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='pistol_mageject']/AudioClip[contains(@ClipName, 'pistol_mageject')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='pistol_mageject']">
+  <AudioClip ClipName="#@modfolder:Resources/pistol.unity3d?mageject"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='pistol_maginsert']/AudioClip[contains(@ClipName, 'pistol_maginsert')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='pistol_maginsert']">
+  <AudioClip ClipName="#@modfolder:Resources/pistol.unity3d?magload"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='pistol_slideback']/AudioClip[contains(@ClipName, 'pistol_slideback')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='pistol_slideback']">
+  <AudioClip ClipName="#@modfolder:Resources/pistol.unity3d?slideback"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='pistol_slidefwd']/AudioClip[contains(@ClipName, 'pistol_slidefwd')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='pistol_slidefwd']">
+  <AudioClip ClipName="#@modfolder:Resources/pistol.unity3d?slidefwd"/>
+</append>
+
+    <!--pistol-->
+	
+    <!--pump shotgun-->
+
+<remove xpath="/Sounds/SoundDataNode[@name='pump_shotgun_fire']/AudioClip[contains(@ClipName, 'pump_shotgun_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='pump_shotgun_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/pumpshotgun.unity3d?pump_shotgun_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/pumpshotgun.unity3d?pump_shotgun_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/pumpshotgun.unity3d?pump_shotgun_fire3"/>
+  <AudioClip ClipName="#@modfolder:Resources/pumpshotgun.unity3d?pump_shotgun_fire4"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='shotgun_reload_part_01']/AudioClip[contains(@ClipName, 'shotgun_reload_part_01')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='shotgun_reload_part_01']">
+  <AudioClip ClipName="#@modfolder:Resources/pumpshotgun.unity3d?shotgun_reload_part_01"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='shotgun_reload_part_02']/AudioClip[contains(@ClipName, 'shotgun_reload_part_02')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='shotgun_reload_part_02']">
+  <AudioClip ClipName="#@modfolder:Resources/pumpshotgun.unity3d?shotgun_reload_part_02"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='shotgun_reload_part_03']/AudioClip[contains(@ClipName, 'shotgun_reload_part_03')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='shotgun_reload_part_03']">
+  <AudioClip ClipName="#@modfolder:Resources/pumpshotgun.unity3d?shotgun_reload_part_03"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='shotgun_reload_part_04']/AudioClip[contains(@ClipName, 'shotgun_reload_part_04')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='shotgun_reload_part_04']">
+  <AudioClip ClipName="#@modfolder:Resources/pumpshotgun.unity3d?shotgun_reload_part_04"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='pump_shotgun_rack_back']/AudioClip[contains(@ClipName, 'pump_shotgun_rack_back')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='pump_shotgun_rack_back']">
+  <AudioClip ClipName="#@modfolder:Resources/pumpshotgun.unity3d?pump_shotgun_rack_back1"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='pump_shotgun_rack_fwd']/AudioClip[contains(@ClipName, 'pump_shotgun_rack_fwd')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='pump_shotgun_rack_fwd']">
+  <AudioClip ClipName="#@modfolder:Resources/pumpshotgun.unity3d?pump_shotgun_rack_fwd1"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='shotgun_shell_insert']/AudioClip[contains(@ClipName, 'shotgun_shell_insert')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='shotgun_shell_insert']">
+  <AudioClip ClipName="#@modfolder:Resources/pumpshotgun.unity3d?shotgun_shell_insert1"/>
+  <AudioClip ClipName="#@modfolder:Resources/pumpshotgun.unity3d?shotgun_shell_insert2"/>
+</append>
+
+    <!--pump shotgun-->
+	
+    <!--sniper rifle-->
+
+<remove xpath="/Sounds/SoundDataNode[@name='sharpshooter_fire']/AudioClip[contains(@ClipName, 'sharpshooter_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='sharpshooter_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/svd.unity3d?sharpshooter_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/svd.unity3d?sharpshooter_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/svd.unity3d?sharpshooter_fire3"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='sniperrifle_s_fire']/AudioClip[contains(@ClipName, 'sniperrifle_s_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='sniperrifle_s_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/svd.unity3d?sniperrifle_s_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/svd.unity3d?sniperrifle_s_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/svd.unity3d?sniperrifle_s_fire3"/>
+  <AudioClip ClipName="#@modfolder:Resources/svd.unity3d?sniperrifle_s_fire4"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='sharpshooter_reload_part_02']/AudioClip[contains(@ClipName, 'sharpshooter_reload_part_02')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='sharpshooter_reload_part_02']">
+  <AudioClip ClipName="#@modfolder:Resources/svd.unity3d?sharpshooter_reload_part_02"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='sharpshooter_reload_part_03']/AudioClip[contains(@ClipName, 'sharpshooter_reload_part_03')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='sharpshooter_reload_part_03']">
+  <AudioClip ClipName="#@modfolder:Resources/svd.unity3d?sharpshooter_reload_part_03"/>
+</append>
+
+    <!--sniper rifle-->
+	
+    <!--double barrel-->
+
+<remove xpath="/Sounds/SoundDataNode[@name='shotgundb_fire']/AudioClip[contains(@ClipName, 'shotgundb_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='shotgundb_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/shotgundb.unity3d?shotgundb_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/shotgundb.unity3d?shotgundb_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/shotgundb.unity3d?shotgundb_fire3"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='shotgundb_reload_part_01']/AudioClip[contains(@ClipName, 'shotgundb_reload_part_01')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='shotgundb_reload_part_01']">
+  <AudioClip ClipName="#@modfolder:Resources/shotgundb.unity3d?shotgundb_reload_part_01"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='shotgundb_reload_part_02']/AudioClip[contains(@ClipName, 'shotgundb_reload_part_02')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='shotgundb_reload_part_02']">
+  <AudioClip ClipName="#@modfolder:Resources/shotgundb.unity3d?shotgundb_reload_part_02"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='shotgundb_reload_part_03']/AudioClip[contains(@ClipName, 'shotgundb_reload_part_03')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='shotgundb_reload_part_03']">
+  <AudioClip ClipName="#@modfolder:Resources/shotgundb.unity3d?shotgundb_reload_part_03"/>
+</append>
+
+    <!--double barrel-->
+	
+    <!--mp5-->
+
+<remove xpath="/Sounds/SoundDataNode[@name='smg_fire']/AudioClip[contains(@ClipName, 'smg_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='smg_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/smg.unity3d?smg_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/smg.unity3d?smg_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/smg.unity3d?smg_fire3"/>
+  <AudioClip ClipName="#@modfolder:Resources/smg.unity3d?smg_fire4"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='smg_s_fire']/AudioClip[contains(@ClipName, 'smg_s_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='smg_s_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/smg.unity3d?smg_s_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/smg.unity3d?smg_s_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/smg.unity3d?smg_s_fire3"/>
+  <AudioClip ClipName="#@modfolder:Resources/smg.unity3d?smg_s_fire4"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='smg_mag_out']/AudioClip[contains(@ClipName, 'smg_mag_out')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='smg_mag_out']">
+  <AudioClip ClipName="#@modfolder:Resources/smg.unity3d?smg_mag_out1"/>
+  <AudioClip ClipName="#@modfolder:Resources/smg.unity3d?smg_mag_out2"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='smg_mag_in']/AudioClip[contains(@ClipName, 'smg_mag_in')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='smg_mag_in']">
+  <AudioClip ClipName="#@modfolder:Resources/smg.unity3d?smg_mag_in"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='smg_slide_back']/AudioClip[contains(@ClipName, 'smg_slide_back')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='smg_slide_back']">
+  <AudioClip ClipName="#@modfolder:Resources/smg.unity3d?smg_slide_back"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='smg_slide_fwd']/AudioClip[contains(@ClipName, 'smg_slide_fwd')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='smg_slide_fwd']">
+  <AudioClip ClipName="#@modfolder:Resources/smg.unity3d?smg_slide_fwd"/>
+</append>
+
+    <!--mp5-->
+	
+    <!--m4-->
+
+<remove xpath="/Sounds/SoundDataNode[@name='tacticalar_fire']/AudioClip[contains(@ClipName, 'tacticalar_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='tacticalar_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/tacticalar.unity3d?tacticalar_fire1"/>
+  <AudioClip ClipName="#@modfolder:Resources/tacticalar.unity3d?tacticalar_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/tacticalar.unity3d?tacticalar_fire3"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='tacticalar_reload_part_01']/AudioClip[contains(@ClipName, 'tacticalar_reload_part_01')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='tacticalar_reload_part_01']">
+  <AudioClip ClipName="#@modfolder:Resources/tacticalar.unity3d?tacticalar_reload_part_01"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='tacticalar_reload_part_02']/AudioClip[contains(@ClipName, 'tacticalar_reload_part_02')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='tacticalar_reload_part_02']">
+  <AudioClip ClipName="#@modfolder:Resources/tacticalar.unity3d?tacticalar_reload_part_02"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='tacticalar_reload_part_03']/AudioClip[contains(@ClipName, 'tacticalar_reload_part_03')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='tacticalar_reload_part_03']">
+  <AudioClip ClipName="#@modfolder:Resources/tacticalar.unity3d?tacticalar_reload_part_03"/>
+</append>
+
+    <!--m4-->
+	
+    <!--explosives-->
+
+<remove xpath="/Sounds/SoundDataNode[@name='explosion1']/AudioClip[contains(@ClipName, 'explosion1')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='explosion1']">
+  <AudioClip ClipName="#@modfolder:Resources/explosives.unity3d?explosion1"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='explosion2']/AudioClip[contains(@ClipName, 'explosion2')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='explosion2']">
+  <AudioClip ClipName="#@modfolder:Resources/explosives.unity3d?explosion2"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='explosion3']/AudioClip[contains(@ClipName, 'explosion3')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='explosion3']">
+  <AudioClip ClipName="#@modfolder:Resources/explosives.unity3d?explosion3"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='explosion_grenade']/AudioClip[contains(@ClipName, 'explosion_grenade')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='explosion_grenade']">
+  <AudioClip ClipName="#@modfolder:Resources/explosives.unity3d?grenade1"/>
+  <AudioClip ClipName="#@modfolder:Resources/explosives.unity3d?grenade2"/>
+  <AudioClip ClipName="#@modfolder:Resources/explosives.unity3d?grenade3"/>
+  <AudioClip ClipName="#@modfolder:Resources/explosives.unity3d?grenade4"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='grenade_pullpin']/AudioClip[contains(@ClipName, 'grenade_pullpin')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='grenade_pullpin']">
+  <AudioClip ClipName="#@modfolder:Resources/explosives.unity3d?grenade_pullpin1"/>
+  <AudioClip ClipName="#@modfolder:Resources/explosives.unity3d?grenade_pullpin2"/>
+</append>
+
+    <!--explosives-->
+	
+	<!--crossbow 1-->
+	
+<remove xpath="/Sounds/SoundDataNode[@name='crossbow_fire']/AudioClip[contains(@ClipName, 'crossbow_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='crossbow_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/crossbow.unity3d?crossbow_fire"/>
+  <AudioClip ClipName="#@modfolder:Resources/crossbow.unity3d?crossbow_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/crossbow.unity3d?crossbow_fire3"/>
+</append>
+
+    <!--crossbow 1-->
+	
+	<!--crossbow 2-->
+	
+<remove xpath="/Sounds/SoundDataNode[@name='crossbow2_fire']/AudioClip[contains(@ClipName, 'crossbow2_fire')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='crossbow2_fire']">
+  <AudioClip ClipName="#@modfolder:Resources/crossbow.unity3d?crossbow_fire"/>
+  <AudioClip ClipName="#@modfolder:Resources/crossbow.unity3d?crossbow_fire2"/>
+  <AudioClip ClipName="#@modfolder:Resources/crossbow.unity3d?crossbow_fire3"/>
+</append>
+ 
+    <!--crossbow 2-->
+	
+    <!--custom sound nodes-->
+
+<append xpath="/Sounds">
+  <SoundDataNode name="tacticalar_s_fire">
+    <AudioSource name="Sounds/AudioSource_WeaponFire"/>
+    <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+    <Noise ID="0" noise="43" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
+    <AudioClip ClipName="#@modfolder:Resources/tacticalar.unity3d?tacticalar_s_fire1"/>
+    <AudioClip ClipName="#@modfolder:Resources/tacticalar.unity3d?tacticalar_s_fire2"/>
+    <AudioClip ClipName="#@modfolder:Resources/tacticalar.unity3d?tacticalar_s_fire3"/>
+    <LocalCrouchVolumeScale value="1"/>
+    <CrouchNoiseScale value="1"/>
+    <NoiseScale value="1"/>
+    <MaxVoices value="60"/>
+    <MaxVoicesPerEntity value="30"/>
+    <MaxRepeatRate value="0.001"/>
+  </SoundDataNode>
+</append>
+
+<append xpath="/Sounds">
+  <SoundDataNode name="desertvulture_s_fire">
+    <AudioSource name="Sounds/AudioSource_WeaponFire"/>
+    <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+    <Noise ID="0" noise="43" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
+    <AudioClip ClipName="#@modfolder:Resources/deagle.unity3d?desertvulture_s_fire1"/>
+    <AudioClip ClipName="#@modfolder:Resources/deagle.unity3d?desertvulture_s_fire2"/>
+    <AudioClip ClipName="#@modfolder:Resources/deagle.unity3d?desertvulture_s_fire3"/>
+    <LocalCrouchVolumeScale value="1"/>
+    <CrouchNoiseScale value="1"/>
+    <NoiseScale value="1"/>
+    <MaxVoices value="60"/>
+    <MaxVoicesPerEntity value="30"/>
+    <MaxRepeatRate value="0.001"/>
+  </SoundDataNode>
+</append>
+
+    <!--custom sound nodes-->
+	
+	<!--weapons end-->
+	
+</Sap>

@@ -1,0 +1,36 @@
+<config>
+
+<!--deepcuts sexrex stamina change for knives-->
+<remove xpath="//item[@name='meleeWpnBladeT0BoneKnife'
+or @name='meleeWpnBladeT1HuntingKnife'
+or @name='meleeWpnBladeT3Machete']/effect_group/passive_effect[@name='StaminaLoss']"/>
+
+		<!--boneknife = 7.3/10.9-->
+<append xpath="//item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']">
+	<passive_effect name="StaminaLoss" operation="base_set" value="19.2,15.3" tier="1,6" tags="primary"/>
+</append>
+<append xpath="//item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='Power Attack']">
+	<passive_effect name="StaminaLoss" operation="base_set" value="31.7,25.3" tier="1,6" tags="secondary"/>
+</append>
+		<!--Huntingknife = 8.2/12.3-->
+<append xpath="//item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']">
+	<passive_effect name="StaminaLoss" operation="base_set" value="12.5,10" tier="1,6" tags="primary"/>
+</append>
+<append xpath="//item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='Power Attack']">
+	<passive_effect name="StaminaLoss" operation="base_set" value="20.1,16.8" tier="1,6" tags="secondary"/>
+</append>
+		<!--Machete = 19.2/32.7-->
+<append xpath="//item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']">
+	<passive_effect name="StaminaLoss" operation="base_set" value="7.3,5.8" tier="1,6" tags="primary"/>
+</append>
+<append xpath="//item[@name='meleeWpnBladeT3Machete']/effect_group[@name='Power Attack']">
+	<passive_effect name="StaminaLoss" operation="base_set" value="13.7,10.9" tier="1,6" tags="secondary"/>
+</append>
+
+</config>
+
+
+
+
+
+

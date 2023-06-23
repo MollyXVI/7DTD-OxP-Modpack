@@ -1,0 +1,17 @@
+<Sap>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
+		<item_property_overrides name="gunMGT2TacticalAR">
+			<property name="Sound_start" value="tacticalar_s_fire"/>
+			<property name="Sound_loop" value="tacticalar_s_fire"/>
+		</item_property_overrides>
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
+		<item_property_overrides name="gunHandgunT3DesertVulture">
+			<property name="Sound_start" value="desertvulture_s_fire"/>
+			<property name="Sound_loop" value="desertvulture_s_fire"/>
+		</item_property_overrides>
+</append>
+
+</Sap>

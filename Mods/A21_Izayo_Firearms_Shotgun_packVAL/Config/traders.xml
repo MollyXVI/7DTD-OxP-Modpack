@@ -1,0 +1,25 @@
+<configs>
+
+
+	<insertAfter xpath="//trader_item_group[@name='groupRangedAll']/item[@name='gunShotgunT1DoubleBarrel']">
+			<item name="IZYgunT1shotgunDoublebarrellong" quality="2,5"/>
+			<item name="IZYgunT1shotgunBoltactionShotgun" quality="2,5"/>
+			<item name="IZYgunT1shotgunModel1887" quality="2,5"/>
+	</insertAfter>
+	
+	<insertAfter xpath="//trader_item_group[@name='groupRangedAll']/item[@name='gunShotgunT2PumpShotgun']">
+			<item name="IZYgunT2shotgunM31hunter" quality="2,5"/>
+			<item name="IZYgunT2shotgunM1897" quality="2,5"/>
+			<item name="IZYgunT2shotgunM870Police" quality="2,5"/>
+	</insertAfter>
+	
+	<insertAfter xpath="//trader_item_group[@name='groupRangedAll']/item[@name='gunShotgunT3AutoShotgun']">
+			<item name="IZYgunT3shotgunM4terminator" quality="2,5"/>
+			<item name="IZYgunT3shotgunXM12G" quality="2,5"/>
+			<item name="IZYgunT3shotgunM590S" quality="2,5"/>
+			<item name="IZYgunT4shotgunSaika12g" quality="2,5" prob=".5"/>
+			<item name="IZYgunT4shotgunHEXAGun" quality="2,5" prob=".5"/>
+			<item name="IZYgunT4shotgunSPAS12" quality="2,5" prob=".5"/>
+	</insertAfter>
+
+</configs>	

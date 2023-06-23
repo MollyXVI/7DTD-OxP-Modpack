@@ -1,0 +1,15 @@
+Double barrel shotgun(long) = https://sketchfab.com/3d-models/double-barrel-shotgun-04741a40f2224cffafc343b0236d5bbe
+Higgins BoltAction Shotgun = https://sketchfab.com/3d-models/higgins-bolt-shotgun-30db97d1e7ce445fba2bd0ac98f3cadd
+Model 1887 = https://sketchfab.com/3d-models/winchester-model-1887-eb83af210c194cd7a30e2e2883977f79
+M31 hunter = https://sketchfab.com/3d-models/classic-shotgun-remington-m31-9f64764395c54cc7a67fd8a29b9dbabf
+M1897 = https://sketchfab.com/3d-models/winchester-model-1897-6194ecd23344442fb23f5820f895a0d8
+M870 Police = https://sketchfab.com/3d-models/remington-870-d7cd704167ee4ed8a3b266bfd2db6623
+M4 terminator https://sketchfab.com/3d-models/renelli-m4-jwck-ch2-brand-friendly-version-7e472e24152246708cac8b6f1613c7a8
+XM-12 automatic shotgun = https://sketchfab.com/3d-models/ar15-free-to-use-bc9465e0a2744d6f9131f8e062dc29af#download
+M590 Special = https://sketchfab.com/3d-models/mossberg-590-2934d17d3ebf40068a2a47b44a63f391
+Saika-12 = https://sketchfab.com/3d-models/komrad-12-saiga-12-2bd3f94f5ba34188a7dfb02fe45445c1
+HEXAgun = same as M870 Police
+SPAS-12 = https://sketchfab.com/3d-models/shotgun-2f5b48d9904145a39c1c2fcc6e5579b7
+
+and many others for additional parts
+

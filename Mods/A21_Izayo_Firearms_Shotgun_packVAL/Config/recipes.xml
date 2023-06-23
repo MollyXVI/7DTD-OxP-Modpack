@@ -1,0 +1,124 @@
+<addnew>
+
+	<append xpath="/recipes">
+
+
+	<recipe name="ammoShotgunShellFlechette" count="1" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="ammoDartIron" count="4"/>
+		<ingredient name="resourceGunPowder" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="1"/>
+	</recipe>
+	
+	<recipe name="ammoShotgunShellTokenShot" count="1" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="casinoCoin" count="7"/>
+		<ingredient name="resourceGunPowder" count="4"/>
+		<ingredient name="resourcePaper" count="1"/>
+	</recipe>
+	
+	<recipe name="ammoShotgunSuperpenetratorslug" count="1" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="resourceForgedSteel" count="1"/>
+		<ingredient name="resourceGunPowder" count="6"/>
+		<ingredient name="resourceScrapPolymers" count="1"/>
+	</recipe>
+
+	<recipe name="IZYgunT1shotgunDoublebarrellong" count="1" craft_area="workbench" tags="learnable,perkBoomstick">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="5"/>
+		<ingredient name="resourceForgedIron" count="50"/>
+		<ingredient name="resourceDuctTape" count="10"/>
+		<ingredient name="resourceScrapPolymers" count="50"/>
+		<ingredient name="resourceSpring" count="10"/>
+	</recipe>
+
+	<recipe name="IZYgunT1shotgunBoltactionShotgun" count="1" craft_area="workbench" tags="learnable,perkBoomstick">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="5"/>
+		<ingredient name="resourceForgedIron" count="50"/>
+		<ingredient name="resourceDuctTape" count="10"/>
+		<ingredient name="resourceScrapPolymers" count="50"/>
+		<ingredient name="resourceSpring" count="10"/>
+	</recipe>
+
+	<recipe name="IZYgunT1shotgunModel1887" count="1" craft_area="workbench" tags="learnable,perkBoomstick">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="5"/>
+		<ingredient name="resourceForgedIron" count="50"/>
+		<ingredient name="resourceDuctTape" count="10"/>
+		<ingredient name="resourceScrapPolymers" count="50"/>
+		<ingredient name="resourceSpring" count="10"/>
+	</recipe>
+
+	<recipe name="IZYgunT2shotgunM31hunter" count="1" craft_area="workbench" tags="learnable,perkBoomstick">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="75"/>
+		<ingredient name="resourceDuctTape" count="15"/>
+		<ingredient name="resourceScrapPolymers" count="100"/>
+		<ingredient name="resourceSpring" count="15"/>
+	</recipe>
+
+	<recipe name="IZYgunT2shotgunM1897" count="1" craft_area="workbench" tags="learnable,perkBoomstick">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="75"/>
+		<ingredient name="resourceDuctTape" count="15"/>
+		<ingredient name="resourceScrapPolymers" count="100"/>
+		<ingredient name="resourceSpring" count="15"/>
+	</recipe>
+
+	<recipe name="IZYgunT2shotgunM870Police" count="1" craft_area="workbench" tags="learnable,perkBoomstick">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="75"/>
+		<ingredient name="resourceDuctTape" count="15"/>
+		<ingredient name="resourceScrapPolymers" count="100"/>
+		<ingredient name="resourceSpring" count="15"/>
+	</recipe>
+
+	<recipe name="IZYgunT3shotgunM4terminator" count="1" craft_area="workbench" tags="learnable,perkBoomstick">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="150"/>
+		<ingredient name="resourceDuctTape" count="15"/>
+		<ingredient name="resourceScrapPolymers" count="200"/>
+		<ingredient name="resourceSpring" count="20"/>
+	</recipe>
+
+	<recipe name="IZYgunT3shotgunXM12G" count="1" craft_area="workbench" tags="learnable,perkBoomstick">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="150"/>
+		<ingredient name="resourceDuctTape" count="15"/>
+		<ingredient name="resourceScrapPolymers" count="200"/>
+		<ingredient name="resourceSpring" count="20"/>
+	</recipe>
+
+	<recipe name="IZYgunT3shotgunM590S" count="1" craft_area="workbench" tags="learnable,perkBoomstick">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="150"/>
+		<ingredient name="resourceDuctTape" count="15"/>
+		<ingredient name="resourceScrapPolymers" count="200"/>
+		<ingredient name="resourceSpring" count="20"/>
+	</recipe>
+
+
+	<recipe name="IZYgunT4shotgunSaika12g" count="1" craft_area="workbench" tags="learnable,perkBoomstick">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="8"/>
+		<ingredient name="resourceForgedSteel" count="160"/>
+		<ingredient name="resourceDuctTape" count="20"/>
+		<ingredient name="resourceScrapPolymers" count="240"/>
+		<ingredient name="resourceSpring" count="24"/>
+	</recipe>
+
+	<recipe name="IZYgunT4shotgunHEXAGun" count="1" craft_area="workbench" tags="learnable,perkBoomstick">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="8"/>
+		<ingredient name="resourceForgedSteel" count="160"/>
+		<ingredient name="resourceDuctTape" count="20"/>
+		<ingredient name="resourceScrapPolymers" count="240"/>
+		<ingredient name="resourceSpring" count="24"/>
+	</recipe>
+
+	<recipe name="IZYgunT4shotgunSPAS12" count="1" craft_area="workbench" tags="learnable,perkBoomstick">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="8"/>
+		<ingredient name="resourceForgedSteel" count="160"/>
+		<ingredient name="resourceDuctTape" count="20"/>
+		<ingredient name="resourceScrapPolymers" count="240"/>
+		<ingredient name="resourceSpring" count="24"/>
+	</recipe>
+
+	</append>
+
+
+</addnew>

@@ -1,0 +1,11 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+newDeepCutsDesc1,progression,perk Agi,,,"You might have a dull blade, but you know how to use it. Inflict up to 5 Bleeding Wounds on an enemy. Primary attacks inflict 1, and a power attack inflicts 2. Every attack refreshes the duration on bleeding. Enemies run 10% slower while bleeding. Find more bladed weapons and parts in loot.",
+
+newDeepCutsDesc2,progression,perk Agi,,,"Your friends say you're a really knife guy. Inflict up to 10 Bleeding Wounds on an enemy. Primary attacks inflict 1, and the first power attack inflicts 4, then 2 per power attack after. Every attack refreshes the duration on bleeding. Enemies run 10% slower while bleeding.",
+
+newDeepCutsDesc3,progression,perk Agi,,,"You're a cut above the rest. Inflict up to 15 Bleeding Wounds on an enemy. Primary attacks inflict 2, and the first power attack inflicts 6, then 3 per power attack after. Every attack refreshes the duration on bleeding. Enemies run 10% slower while bleeding.",
+
+newDeepCutsDesc4,progression,perk Agi,,,"You're quite lethal with bladed weapons. Inflict up to 20 Bleeding Wounds on an enemy. Primary attacks inflict 2, and the first power attack inflicts 8, then 4 per power attack after. Every attack refreshes the duration on bleeding. Enemies run 10% slower while bleeding.",
+
+newDeepCutsDesc5,progression,perk Agi,,,"You're a samurai and can make sushi out of your foes. Inflict up to 21 Bleeding Wounds on an enemy. Primary attacks inflict 2, and the first power attack inflicts 10, then 5 per power attack after. Every attack refreshes the duration on bleeding. Enemies run 20% slower while bleeding.",
