@@ -13,3 +13,4 @@
 * Improved Hordes : https://7daystodiemods.com/improved-hordes/
 * Plebs Knife Rework : https://7daystodiemods.com/plebs-knife-rework/
 * SMX : https://www.nexusmods.com/7daystodie/mods/22
+* BdubsVehicles : https://www.nexusmods.com/7daystodie/mods/342
