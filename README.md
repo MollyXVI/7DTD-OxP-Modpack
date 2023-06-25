@@ -11,7 +11,9 @@
 * Unique Relics : https://7daystodiemods.com/unique-relics/
 * DayZ Weapons Sounds : https://7daystodiemods.com/dayz-weapons-sounds-mod/
 * Improved Hordes : https://7daystodiemods.com/improved-hordes/
-* Plebs Knife Rework : https://7daystodiemods.com/plebs-knife-rework/
 * SMX : https://www.nexusmods.com/7daystodie/mods/22
-* BdubsVehicles : https://www.nexusmods.com/7daystodie/mods/342
+* BdubsVehicles : https://7daystodiemods.com/bdubs-vehicles/
+# Mods not in ModPack but used by server:
+* Plebs Knife Rework : https://7daystodiemods.com/plebs-knife-rework/
 * Guns Fast Reload Speed : https://7daystodiemods.com/guns-fast-reload-speed/
+* Merged Dew Collectors : https://www.nexusmods.com/7daystodie/mods/2986
