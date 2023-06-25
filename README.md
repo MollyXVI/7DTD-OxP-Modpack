@@ -14,3 +14,4 @@
 * Plebs Knife Rework : https://7daystodiemods.com/plebs-knife-rework/
 * SMX : https://www.nexusmods.com/7daystodie/mods/22
 * BdubsVehicles : https://www.nexusmods.com/7daystodie/mods/342
+* Guns Fast Reload Speed : https://7daystodiemods.com/guns-fast-reload-speed/
