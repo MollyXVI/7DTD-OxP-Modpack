@@ -19,3 +19,4 @@ Server-Side mods:
 * Plebs Knife Rework : https://7daystodiemods.com/plebs-knife-rework/
 * Guns Fast Reload Speed : https://7daystodiemods.com/guns-fast-reload-speed/
 * Merged Dew Collectors : https://www.nexusmods.com/7daystodie/mods/2986
+* Realistic Silencers : https://7daystodiemods.com/realistic-silencers/
