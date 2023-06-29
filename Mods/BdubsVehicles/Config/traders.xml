@@ -21,8 +21,6 @@
 		<item name="vehicleBuggychassis"/>
 		<item name="vehicleBuggyaccessories"/>
 		<item name="vehicleBuggyplaceable"/>
-		<item name="vehicleWorkTruckchassis"/>
-		<item name="vehicleWorkTruckaccessories"/>
 		<item name="vehicleUAZ452chassis"/>
 		<item name="vehicleUAZ452placeable"/>
 		<item name="vehicleNovachassis"/>
@@ -117,6 +115,8 @@
 		<item name="vehicleWillyJeepToplessPurpleplaceable"/>
 		<item name="vehicleWillyJeepRedplaceable"/>
 		<item name="vehicleWillyJeepToplessRedplaceable"/>
+		<item name="vehicleWorkTruckchassis"/>
+		<item name="vehicleWorkTruckaccessories"/>
 		<item name="vehicleWorkTruckplaceable"/>
 	</append>
 	<append xpath="/traders">

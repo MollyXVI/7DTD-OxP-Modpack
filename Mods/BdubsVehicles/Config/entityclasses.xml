@@ -1068,7 +1068,7 @@
 			<property name="ModelType" value="Standard"/>
 			<property name="SurfaceCategory" value="metal"/>
 			<property name="IgnoreTrigger" value="true"/>
-			<property name="LootListAlive" value="vehicle4x4Truck"/>
+			<property name="LootListAlive" value="BDvehicleXL3"/>
 			<property name="IsEnemyEntity" value="false"/>
 			<property name="Explosion.ParticleIndex" value="6"/>
 			<property name="Explosion.RadiusBlocks" value="3"/>

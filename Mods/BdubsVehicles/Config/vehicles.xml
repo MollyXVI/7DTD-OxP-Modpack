@@ -3,8 +3,9 @@
 		<vehicle name="vehicleBoxTruckPlain">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="1500"/>
-			<property name="motorTorqueMaxQ" value="2000"/>
+			<property name="motorTorque" value="1800, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9, 8"/>
 			<property name="brakeTorque" value="1500"/>
 			<property name="upAngleMax" value="90"/>
 			<property name="upForce" value="1"/>
@@ -17,7 +18,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="10, 12"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="truck_horn2"/>
@@ -186,8 +186,9 @@
 		<vehicle name="vehicleBoxTruckHostess">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="1500"/>
-			<property name="motorTorqueMaxQ" value="2000"/>
+			<property name="motorTorque" value="1800, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9, 8"/>
 			<property name="brakeTorque" value="1500"/>
 			<property name="upAngleMax" value="90"/>
 			<property name="upForce" value="1"/>
@@ -200,7 +201,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="10, 12"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="truck_horn2"/>
@@ -369,9 +369,10 @@
 		<vehicle name="vehicleBRDM2">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
-			<property name="brakeTorque" value="4500"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 8"/>
+			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
 			<property name="steerRate" value="120"/>
@@ -383,7 +384,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="14, 14"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="truck_horn"/>
@@ -571,9 +571,10 @@
 		<vehicle name="vehicleBRDM2desert">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
-			<property name="brakeTorque" value="4500"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 8"/>
+			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
 			<property name="steerRate" value="120"/>
@@ -585,7 +586,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="14, 14"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="truck_horn"/>
@@ -773,8 +773,9 @@
 		<vehicle name="vehicleBuggy">
 			<property name="cameraDistance" value="5.5, 5"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="5000"/>
-			<property name="motorTorqueMaxQ" value="7000"/>
+			<property name="motorTorque" value="2500, 2000"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="12, 13"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -787,7 +788,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="20, 20"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="horn_loud"/>
@@ -914,8 +914,9 @@
 		<vehicle name="vehicleChargerblack">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="1800, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.3, 10"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -928,7 +929,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -1077,8 +1077,9 @@
 		<vehicle name="vehicleChargerblack2">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="1800, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.3, 10"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -1091,7 +1092,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -1245,8 +1245,9 @@
 		<vehicle name="vehicleChargerorange">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="1800, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.3, 10"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -1259,7 +1260,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -1413,8 +1413,9 @@
 		<vehicle name="vehicleChargerorange2">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="1800, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.3, 10"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -1427,7 +1428,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -1581,8 +1581,9 @@
 		<vehicle name="vehicleChargeryellow">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="1800, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.3, 10"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -1595,7 +1596,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -1749,8 +1749,9 @@
 		<vehicle name="vehicleChargeryellow2">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="1800, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.3, 10"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -1763,7 +1764,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -1917,8 +1917,9 @@
 		<vehicle name="vehicleChargergreen">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="1800, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.3, 10"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -1931,7 +1932,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -2085,8 +2085,9 @@
 		<vehicle name="vehicleChargergreen2">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="1800, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.3, 10"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -2099,7 +2100,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -2253,8 +2253,9 @@
 		<vehicle name="vehicleChargerteal">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="1800, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.3, 10"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -2267,7 +2268,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -2421,8 +2421,9 @@
 		<vehicle name="vehicleChargerteal2">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="1800, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.3, 10"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -2435,7 +2436,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -2589,8 +2589,9 @@
 		<vehicle name="vehicleChargerrust">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="1800, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.3, 10"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -2603,7 +2604,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -2757,8 +2757,9 @@
 		<vehicle name="vehicleChargerrust2">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="1800, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.3, 10"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -2771,7 +2772,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -2925,8 +2925,9 @@
 		<vehicle name="vehicleCruiser">
 			<property name="cameraDistance" value="3.5, 5"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="2500"/>
-			<property name="motorTorqueMaxQ" value="2500"/>
+			<property name="motorTorque" value="1800, 800"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="11, 8"/>
 			<property name="brakeTorque" value="5000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -2939,7 +2940,6 @@
 			<property name="tiltUpForce" value="5"/>
 			<property name="hopForce" value="1, .8"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="horn_loud"/>
@@ -3051,8 +3051,9 @@
 		<vehicle name="vehicleCruiser2">
 			<property name="cameraDistance" value="3.5, 5"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="2500"/>
-			<property name="motorTorqueMaxQ" value="2500"/>
+			<property name="motorTorque" value="1800, 800"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="11, 8"/>
 			<property name="brakeTorque" value="5000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -3065,7 +3066,6 @@
 			<property name="tiltUpForce" value="5"/>
 			<property name="hopForce" value="1, .8"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="horn_loud"/>
@@ -3177,8 +3177,9 @@
 		<vehicle name="vehicleDirtBike">
 			<property name="cameraDistance" value="4, 5"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="3500"/>
+			<property name="motorTorque" value="2000, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="13, 12"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="90"/>
 			<property name="upForce" value="5"/>
@@ -3191,7 +3192,6 @@
 			<property name="tiltUpForce" value="5"/>
 			<property name="hopForce" value="1, 1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="22,22"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="horn_loud"/>
@@ -3303,8 +3303,9 @@
 		<vehicle name="vehicleDuster">
 			<property name="cameraDistance" value="8, 10"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="10"/>
-			<property name="motorTorqueMaxQ" value="100"/>
+			<property name="motorTorque" value="100, 10"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="18, 18"/>
 			<property name="brakeTorque" value="1"/>
 			<property name="steerRate" value="100"/>
 			<property name="steerCenteringRate" value="90"/>
@@ -3316,7 +3317,6 @@
 			<property name="upAngleMax" value="60"/>
 			<property name="upForce" value=".5"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="18, 18"/>
 			<property name="airDrag_velScale_angVelScale" value=".997, .97"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, 1"/>
 			<property name="waterLift_y_depth_force" value="1, .5, .1"/>
@@ -3446,8 +3446,9 @@
 		<vehicle name="vehicleGNXBlack">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="5000"/>
+			<property name="motorTorque" value="2200, 1000"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="12, 13"/>
 			<property name="brakeTorque" value="6000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -3460,7 +3461,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="18, 18"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -3609,8 +3609,9 @@
 		<vehicle name="vehicleGNXRed">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorque" value="2200, 1000"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="12, 13"/>
 			<property name="brakeTorque" value="6000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -3623,7 +3624,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 18"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -3772,8 +3772,9 @@
 		<vehicle name="vehicleGolfCart">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="800"/>
-			<property name="motorTorqueMaxQ" value="1500"/>
+			<property name="motorTorque" value="500, 400"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="7, 6"/>
 			<property name="brakeTorque" value="2000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -3786,7 +3787,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value=".1"/>
-			<property name="velocityMax" value="8, 10"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn"/>
@@ -3910,8 +3910,9 @@
 		<vehicle name="vehicleHotRod1">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3500"/>
-			<property name="motorTorqueMaxQ" value="4500"/>
+			<property name="motorTorque" value="2200, 1100"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="12, 13"/>
 			<property name="brakeTorque" value="1800"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -3924,7 +3925,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="18, 18"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -4046,8 +4046,9 @@
 		<vehicle name="vehicleHotRod2">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3500"/>
-			<property name="motorTorqueMaxQ" value="4500"/>
+			<property name="motorTorque" value="2200, 1100"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="12, 13"/>
 			<property name="brakeTorque" value="1800"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -4060,7 +4061,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="18, 18"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -4182,8 +4182,9 @@
 		<vehicle name="vehicleHotRod3">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3500"/>
-			<property name="motorTorqueMaxQ" value="4500"/>
+			<property name="motorTorque" value="2200, 1100"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="12, 13"/>
 			<property name="brakeTorque" value="1800"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -4196,7 +4197,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="18, 18"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -4318,8 +4318,9 @@
 		<vehicle name="vehicleHotRod4">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3500"/>
-			<property name="motorTorqueMaxQ" value="4500"/>
+			<property name="motorTorque" value="2200, 1100"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="12, 13"/>
 			<property name="brakeTorque" value="1800"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -4332,7 +4333,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="18, 18"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -4454,8 +4454,9 @@
 		<vehicle name="vehicleHotRod5">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3500"/>
-			<property name="motorTorqueMaxQ" value="4500"/>
+			<property name="motorTorque" value="2200, 1100"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="12, 13"/>
 			<property name="brakeTorque" value="1800"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -4468,7 +4469,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="18, 18"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -4590,8 +4590,9 @@
 		<vehicle name="vehicleHotRod6">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3500"/>
-			<property name="motorTorqueMaxQ" value="4500"/>
+			<property name="motorTorque" value="2200, 1100"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="12, 13"/>
 			<property name="brakeTorque" value="1800"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -4604,7 +4605,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="18, 18"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -4726,8 +4726,9 @@
 		<vehicle name="vehicleHumvee">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="2500, 1300"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.5, 10"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -4740,7 +4741,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="truck_horn"/>
@@ -4890,8 +4890,9 @@
 		<vehicle name="vehicleHumveeTopless">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="2500, 1300"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.5, 10"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -4904,7 +4905,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="truck_horn"/>
@@ -5084,8 +5084,9 @@
 		<vehicle name="vehicleJunker">
 			<property name="cameraDistance" value="3.5, 5"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="2500"/>
-			<property name="motorTorqueMaxQ" value="2500"/>
+			<property name="motorTorque" value="1800, 800"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.5, 9"/>
 			<property name="brakeTorque" value="5000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -5098,7 +5099,6 @@
 			<property name="tiltUpForce" value="5"/>
 			<property name="hopForce" value="1, .8"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="horn_loud"/>
@@ -5225,8 +5225,9 @@
 		<vehicle name="vehicleJunker2">
 			<property name="cameraDistance" value="3.5, 5"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="2500"/>
-			<property name="motorTorqueMaxQ" value="2500"/>
+			<property name="motorTorque" value="1800, 800"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.5, 9"/>
 			<property name="brakeTorque" value="5000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -5239,7 +5240,6 @@
 			<property name="tiltUpForce" value="5"/>
 			<property name="hopForce" value="1, .8"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="horn_loud"/>
@@ -5366,8 +5366,9 @@
 		<vehicle name="vehicleLMTV">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="5500"/>
-			<property name="motorTorqueMaxQ" value="7000"/>
+			<property name="motorTorque" value="2400, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.1, 9"/>
 			<property name="brakeTorque" value="1500"/>
 			<property name="upAngleMax" value="90"/>
 			<property name="upForce" value="1"/>
@@ -5380,7 +5381,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="13, 15"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="truck_horn2"/>
@@ -5593,8 +5593,9 @@
 		<vehicle name="vehicleMarauder">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="5000"/>
+			<property name="motorTorque" value="2400, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="12, 11"/>
 			<property name="brakeTorque" value="2000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -5607,7 +5608,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 18"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="truck_horn"/>
@@ -5729,8 +5729,9 @@
 		<vehicle name="vehicleMarauderblack">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="5000"/>
+			<property name="motorTorque" value="2400, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="12, 11"/>
 			<property name="brakeTorque" value="2000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -5743,7 +5744,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 18"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="truck_horn"/>
@@ -5865,8 +5865,9 @@
 		<vehicle name="vehicleMD500">
 			<property name="cameraDistance" value="10, 10"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="100"/>
-			<property name="motorTorqueMaxQ" value="1000"/>
+			<property name="motorTorque" value="1000, 100"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="25, 25"/>
 			<property name="brakeTorque" value="10"/>
 			<property name="steerRate" value="130"/>
 			<property name="steerCenteringRate" value="90"/>
@@ -5878,7 +5879,6 @@
 			<property name="upAngleMax" value="60"/>
 			<property name="upForce" value=".5"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="25, 25"/>
 			<property name="airDrag_velScale_angVelScale" value=".997, .97"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, 1"/>
 			<property name="waterLift_y_depth_force" value="1, .5, .1"/>
@@ -6012,8 +6012,9 @@
 		<vehicle name="vehicleMRAP">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="2500"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="2500, 1500"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9"/>
 			<property name="brakeTorque" value="2000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -6026,7 +6027,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="0"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="13, 13"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="truck_horn2"/>
@@ -6195,8 +6195,9 @@
 		<vehicle name="vehicleMRAP2">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="2500"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="2500, 1500"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9"/>
 			<property name="brakeTorque" value="2000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -6209,7 +6210,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="0"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="13, 13"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="truck_horn2"/>
@@ -6378,8 +6378,9 @@
 		<vehicle name="vehicleNova">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="2500"/>
-			<property name="motorTorqueMaxQ" value="3000"/>
+			<property name="motorTorque" value="2000, 1000"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="11, 10"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -6392,7 +6393,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn"/>
@@ -6541,8 +6541,9 @@
 		<vehicle name="vehicleNovared">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="2000, 1000"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="11, 10"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -6555,7 +6556,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn"/>
@@ -6704,8 +6704,9 @@
 		<vehicle name="vehicleNovablack">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="2000, 1000"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="11, 10"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -6718,7 +6719,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn"/>
@@ -6867,8 +6867,9 @@
 		<vehicle name="vehicleOldSemi">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4500"/>
-			<property name="motorTorqueMaxQ" value="5000"/>
+			<property name="motorTorque" value="2500, 1500"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="8.9, 8.7"/>
 			<property name="brakeTorque" value="1500"/>
 			<property name="upAngleMax" value="90"/>
 			<property name="upForce" value="1"/>
@@ -6881,7 +6882,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="13, 15"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="truck_horn2"/>
@@ -7050,9 +7050,10 @@
 		<vehicle name="vehiclePickup">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
-			<property name="brakeTorque" value="3500"/>
+			<property name="motorTorque" value="1800, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10.75, 9.5"/>
+			<property name="brakeTorque" value="3000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
 			<property name="steerRate" value="190"/>
@@ -7064,7 +7065,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="18, 18"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -7213,8 +7213,9 @@
 		<vehicle name="vehicleRat">
 			<property name="cameraDistance" value="3.5, 5"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="2500"/>
-			<property name="motorTorqueMaxQ" value="2500"/>
+			<property name="motorTorque" value="2000, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="11.5, 8.5"/>
 			<property name="brakeTorque" value="5000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -7227,7 +7228,6 @@
 			<property name="tiltUpForce" value="5"/>
 			<property name="hopForce" value="1, .8"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="horn_loud"/>
@@ -7339,8 +7339,9 @@
 		<vehicle name="vehicleRat2">
 			<property name="cameraDistance" value="3.5, 5"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="2500"/>
-			<property name="motorTorqueMaxQ" value="2500"/>
+			<property name="motorTorque" value="2000, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="11.5, 8.5"/>
 			<property name="brakeTorque" value="5000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -7353,7 +7354,6 @@
 			<property name="tiltUpForce" value="5"/>
 			<property name="hopForce" value="1, .8"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="horn_loud"/>
@@ -7476,8 +7476,9 @@
 		<vehicle name="vehicleSHERP">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="2500"/>
-			<property name="motorTorqueMaxQ" value="2500"/>
+			<property name="motorTorque" value="2500, 1500"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9"/>
 			<property name="brakeTorque" value="800"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -7490,7 +7491,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="14, 14"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="truck_horn"/>
@@ -7659,8 +7659,9 @@
 		<vehicle name="vehicleStalliongreen">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="2000, 1100"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="11.8, 9.5"/>
 			<property name="brakeTorque" value="2000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -7673,7 +7674,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn"/>
@@ -7822,8 +7822,9 @@
 		<vehicle name="vehicleStallionred">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="2000, 1100"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="11.8, 9.5"/>
 			<property name="brakeTorque" value="2000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -7836,7 +7837,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn"/>
@@ -7985,8 +7985,9 @@
 		<vehicle name="vehicleStallionblue">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="2000, 1100"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="11.8, 9.5"/>
 			<property name="brakeTorque" value="2000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -7999,7 +8000,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn"/>
@@ -8148,8 +8148,9 @@
 		<vehicle name="vehicleStallionwhite">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="2000, 1100"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="11.8, 9.5"/>
 			<property name="brakeTorque" value="2000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -8162,7 +8163,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="17, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn"/>
@@ -8311,8 +8311,9 @@
 		<vehicle name="vehicleUAZ452">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="4000"/>
+			<property name="motorTorque" value="1600, 800"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="10, 8.5"/>
 			<property name="brakeTorque" value="2000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -8325,7 +8326,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 15"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="truck_horn2"/>
@@ -8467,8 +8467,9 @@
 		<vehicle name="vehicleUH60">
 			<property name="cameraDistance" value="15, 15"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="100"/>
-			<property name="motorTorqueMaxQ" value="1000"/>
+			<property name="motorTorque" value="1000, 100"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="25, 25"/>
 			<property name="brakeTorque" value="10"/>
 			<property name="steerRate" value="130"/>
 			<property name="steerCenteringRate" value="90"/>
@@ -8480,7 +8481,6 @@
 			<property name="upAngleMax" value="60"/>
 			<property name="upForce" value=".5"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="25, 25"/>
 			<property name="airDrag_velScale_angVelScale" value=".997, .97"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, 1"/>
 			<property name="waterLift_y_depth_force" value="1, .5, .1"/>
@@ -8646,8 +8646,9 @@
 		<vehicle name="vehicleWillyJeep">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9.1"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -8660,7 +8661,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -8782,8 +8782,9 @@
 		<vehicle name="vehicleWillyJeepTopless">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9.1"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -8796,7 +8797,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -8953,8 +8953,9 @@
 		<vehicle name="vehicleWillyJeepBlack">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9.1"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -8967,7 +8968,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -9089,8 +9089,9 @@
 		<vehicle name="vehicleWillyJeepToplessBlack">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9.1"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -9103,7 +9104,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -9260,8 +9260,9 @@
 		<vehicle name="vehicleWillyJeepBlue">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9.1"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -9274,7 +9275,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -9396,8 +9396,9 @@
 		<vehicle name="vehicleWillyJeepToplessBlue">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9.1"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -9410,7 +9411,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -9567,8 +9567,9 @@
 		<vehicle name="vehicleWillyJeepGreen">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9.1"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -9581,7 +9582,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -9703,8 +9703,9 @@
 		<vehicle name="vehicleWillyJeepToplessGreen">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9.1"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -9717,7 +9718,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -9874,8 +9874,9 @@
 		<vehicle name="vehicleWillyJeepOrange">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9.1"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -9888,7 +9889,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -10010,8 +10010,9 @@
 		<vehicle name="vehicleWillyJeepToplessOrange">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9.1"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -10024,7 +10025,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -10181,8 +10181,9 @@
 		<vehicle name="vehicleWillyJeepPurple">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9.1"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -10195,7 +10196,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -10317,8 +10317,9 @@
 		<vehicle name="vehicleWillyJeepToplessPurple">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9.1"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -10331,7 +10332,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -10488,8 +10488,9 @@
 		<vehicle name="vehicleWillyJeepRed">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9.1"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -10502,7 +10503,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -10624,8 +10624,9 @@
 		<vehicle name="vehicleWillyJeepToplessRed">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorque" value="2200, 1200"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.5, 9.1"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -10638,7 +10639,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 17"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
@@ -10795,8 +10795,9 @@
 		<vehicle name="vehicleWorkTruck">
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="5000"/>
+			<property name="motorTorque" value="1400, 700"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="9.1, 8.8"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -10809,7 +10810,6 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 15"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="car_horn2"/>
