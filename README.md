@@ -20,3 +20,5 @@ Server-Side mods:
 * Guns Fast Reload Speed : https://7daystodiemods.com/guns-fast-reload-speed/
 * Merged Dew Collectors : https://www.nexusmods.com/7daystodie/mods/2986
 * Realistic Silencers : https://7daystodiemods.com/realistic-silencers/
+* Zombie Reach Adjustment : https://7daystodiemods.com/zombie-reach-adjustment/
+* Change Rate of Fire and Range : https://7daystodiemods.com/change-rate-of-fire-and-range/
