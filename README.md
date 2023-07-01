@@ -14,6 +14,7 @@ Client-Side mods:
 * Improved Hordes : https://7daystodiemods.com/improved-hordes/
 * SMX : https://www.nexusmods.com/7daystodie/mods/22
 * BdubsVehicles : https://7daystodiemods.com/bdubs-vehicles/
+* VergilSparda’s Various Victuals : https://7daystodiemods.com/vergilspardas-various-victuals/
 # Mods not in ModPack but used by server:
 Server-Side mods:
 * Plebs Knife Rework : https://7daystodiemods.com/plebs-knife-rework/
