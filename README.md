@@ -16,6 +16,7 @@ Client-Side mods:
 * BdubsVehicles : https://7daystodiemods.com/bdubs-vehicles/
 * VergilSparda’s Various Victuals : https://7daystodiemods.com/vergilspardas-various-victuals/
 * DLX Weapons Fix : https://7daystodiemods.com/dlx-weapons-fix-aligned-sights-aiming-directly-from-the-scope-and-more/
+* Rings of Potential : https://7daystodiemods.com/rings-of-potential/
 # Mods not in ModPack but used by server:
 Server-Side mods:
 * Plebs Knife Rework : https://7daystodiemods.com/plebs-knife-rework/
