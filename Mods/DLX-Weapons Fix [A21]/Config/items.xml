@@ -1,0 +1,20 @@
+<configs>
+		
+<!-- PISTOL -->
+	<append xpath="items/item[@name='gunHandgunT1Pistol']">
+		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill,DLXAttachments"/>
+		<property name="Meshfile" value="#@modfolder:Resources/A21-DLX-Pistol30.unity3d?A21-DLX-Pistol30.prefab"/>				
+		<property name="CrosshairOnAim" value="false"/>
+		
+		<property class="Action1">
+			<property name="ScopeCameraOffset" value="-0.0005,0.00601,.075"/>
+			<property name="Zoom_max_out" value="57"/>
+			<property name="Zoom_max_in" value="57"/>			
+		</property>	
+		
+		<!-- For Testing Purpose <effect_group name="gunHandgunT1Pistol">
+			<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="0" tags="perkGunslinger"/>
+		</effect_group> -->
+	</append>
+	
+</configs>

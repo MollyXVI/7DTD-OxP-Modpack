@@ -1,0 +1,243 @@
+<configs>
+<!-- RELFEX -->
+	<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">		
+		<item_property_overrides name="gunHandgunT1Pistol">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="56"/>
+			<property name="Zoom_max_in" value="56"/>
+			<property name="ScopeCameraOffset" value="-0.0005,-0.0126,0.079"/>	 
+		</item_property_overrides>			
+	</append>
+	
+<!-- FLASHLIGHT -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
+		<item_property_overrides name="gunHandgunT1Pistol">
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+
+		<effect_group tiered="false" name="FlashLight DLX attachments">
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="lightSource"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="Attachment" transform_path="lightSource"/>				
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="Attachment" transform_path="lightSource"/>
+		</effect_group>
+	</append>
+
+<!-- LASER SIGHT -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']">
+		<item_property_overrides name="gunHandgunT1Pistol">
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+
+		<effect_group tiered="false" name="LaserSight DLX attachments">
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="laserSource"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="Attachment" transform_path="laserSource"/>				
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="Attachment" transform_path="laserSource"/>	
+		</effect_group>
+	</append>
+
+<!-- SCOPE SMALL -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
+		<item_property_overrides name="gunHandgunT1Pistol">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="-0.0004,-.0160,-0.0986011"/><!-- -0.105   -0.095 -0.10 -0.099 OK -0.0986011-->
+		</item_property_overrides>
+
+		<effect_group tiered="false" name="ScopeSmall DLX attachments">
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment/scopeLight" transform_path="scopeLight_NOTINT"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="false" parent_transform="Attachment/scopeLight" transform_path="scopeLight_NOTINT"/>	
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment/scopeLight" transform_path="scopeDirt_NOTINT"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="false" parent_transform="Attachment/scopeLight" transform_path="scopeDirt_NOTINT"/>
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment/scopeReticle" transform_path="Reticle_01_WHITE"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="false" parent_transform="Attachment/scopeReticle" transform_path="Reticle_01_WHITE"/>
+			
+			
+			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="scopeSource2X"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="false" parent_transform="Attachment" transform_path="scopeSource2X"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachment" transform_path="scopeSource2X"/>			
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="Attachment" transform_path="scopeSource2X"/>	
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="scope" transform_path="scopeSourceOFF"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="true" parent_transform="scope" transform_path="scopeSourceOFF"/>
+			
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ScopeScratch2X"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ScopeScratch2X"/>
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ScopeScratch2X"/>			
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ScopeScratch2X"/>						
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ScopeScratch2X"/>	
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ScopeScratch2X"/>					
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ScopeScratch2X"/>						
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ScopeScratch2X"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ScopeScratch2X"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ScopeScratch2X"/>			
+		</effect_group>		
+	</append>
+
+<!-- MUZZLE BRAKE -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunMuzzleBrake']">
+	<!-- 	TRYING DESPERATELY TO LOAD THE MUZZLE BRAKE AND THE EXTENDER BARREL MOD. 
+			If I install the mod on a not equipped gun and then switch to it, the brake/extender won't show up.
+			If I load the game and switch weapon to the modded one, the mod doesn't show up.
+			So I'm trying to trigger every possible buff in order to show the brake/extender.
+			Note: trigger "onSelfEnteredGame" doesn't work.	-->
+		
+		<effect_group tiered="false" name="MuzzleBrake DLX attachments">	
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>			
+		</effect_group>
+
+	</append>
+
+<!-- BARREL EXTENDER -->			
+	<append xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']">			
+		<effect_group tiered="false" name="BarrelExtender DLX attachments">	
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>
+
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>			
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" parent_transform="GunModel" transform_path="GunBarrelTBR"/>				
+		</effect_group>
+	</append>
+	
+<!-- MAGAZINE EXTENDER -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtender']">	
+		<effect_group tiered="false" name="MagazineExtender attachments">	
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>			
+	
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" parent_transform="GunModel" transform_path="GunMagazineTBR"/>				
+		</effect_group>
+	</append>		
+	
+	<!-- DRUM MAGAZINE -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunDrumMagazineExtender']">	
+		<effect_group tiered="false" name="DrumMagazine DLX attachments">	
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>			
+	
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" parent_transform="GunModel" transform_path="GunMagazineTBR"/>				
+		</effect_group>
+	</append>
+	
+<!-- RETRACTING STOCK -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunRetractingStock']">	
+		<effect_group tiered="false" name="RetractingStock DLX attachments">	
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>			
+	
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>			
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" parent_transform="GunModel" transform_path="GunStockTBR"/>				
+		</effect_group>	
+	</append>	
+	
+<!-- FORE GRIP -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunForegrip']">	
+		<effect_group tiered="false" name="ForeGrip DLX attachments">	
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>			
+		
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>			
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" parent_transform="GunModel" transform_path="GunGripTBR"/>	
+		</effect_group>	
+	</append>	
+	
+<!-- BIPOD -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunBipod']">	
+		<effect_group tiered="false" name="Bipod DLX attachments">	
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>			
+		</effect_group>	
+	</append>	
+</configs>

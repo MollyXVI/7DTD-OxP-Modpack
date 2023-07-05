@@ -15,6 +15,7 @@ Client-Side mods:
 * SMX : https://www.nexusmods.com/7daystodie/mods/22
 * BdubsVehicles : https://7daystodiemods.com/bdubs-vehicles/
 * VergilSparda’s Various Victuals : https://7daystodiemods.com/vergilspardas-various-victuals/
+* DLX Weapons Fix : https://7daystodiemods.com/dlx-weapons-fix-aligned-sights-aiming-directly-from-the-scope-and-more/
 # Mods not in ModPack but used by server:
 Server-Side mods:
 * Plebs Knife Rework : https://7daystodiemods.com/plebs-knife-rework/
